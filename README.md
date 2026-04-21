@@ -1,2 +1,2 @@
-# Viterbi_Decoder_16bit
+# Project VLSI_ET4340_20252 20223683
 
