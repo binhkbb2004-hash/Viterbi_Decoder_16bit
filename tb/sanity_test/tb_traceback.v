@@ -66,9 +66,9 @@ module tb_traceback();
     traceback u_traceback (
         .clk(clk), .rst_n(rst_n),
         .i_memory_done(w_memory_done),
-        .i_slt_node(w_slt_node),
-        .i_bck_prev_st_00(w_bck_prev_st_00), .i_bck_prev_st_01(w_bck_prev_st_01),
-        .i_bck_prev_st_10(w_bck_prev_st_10), .i_bck_prev_st_11(w_bck_prev_st_11),
+        .slt_node(w_slt_node),
+        .bck_prev_st_00(w_bck_prev_st_00), .bck_prev_st_01(w_bck_prev_st_01),
+        .bck_prev_st_10(w_bck_prev_st_10), .bck_prev_st_11(w_bck_prev_st_11),
         .o_data(o_data),
         .o_done(o_done)
     );
