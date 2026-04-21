@@ -1,2 +1,2 @@
-# Viterbi_Decoder_16bit Project môn học Thiết kế VLSI ET4340 sinh viên 20223683
+# Project VLSI_ET4340_20252 20223683
 
