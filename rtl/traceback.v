@@ -78,10 +78,10 @@ module traceback (
                 end 
             // Hoàn thành truy vết 
                 else begin
-                    tracing    <= 1'b0;       // Dừng truy vết
-                    o_data     <= temp_data;  // Gửi dữ liệu ra output
-                    o_done     <= 1'b1;       // Bật cờ hoàn thành 
-                    count      <= 4'd0;       // Reset biến đếm
+                    tracing    <= 1'b0; // Dừng truy vết
+                    o_data     <= temp_data; // Gửi dữ liệu ra output
+                    o_done     <= 1'b1; // Bật cờ done
+                    count      <= 4'd0; // Reset biến đếm
                 end
             end 
             
