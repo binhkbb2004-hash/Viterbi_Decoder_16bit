@@ -11,7 +11,7 @@ module traceback (
     output reg        o_done // Cờ báo hoàn tất giải mã
 );
     // Khai báo các biến nội bộ
-    reg [3:0] count; // Đếm 8 chu kỳ (0 -> 8)
+    reg [3:0] count; // Đếm 8 chu kỳ
     reg [1:0] current_node; // Trạng thái hiện tại đang xét
     reg [7:0] temp_data; // Thanh ghi dịch chứa chuỗi kết quả tạm
     reg       tracing; // Cờ báo hiệu mạch đang chạy
