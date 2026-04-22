@@ -27,7 +27,7 @@ module memory (
     reg [1:0] trellis_diagr [0:3][0:7];
 
     // Các biến đếm nội bộ
-    reg [3:0] count;     // Biến đếm ghi (đếm từ 1 đến 7)
+    reg [2:0] count;     // Biến đếm ghi (đếm từ 1 đến 7)
     reg [2:0] trace;     // Biến đếm đọc (đếm từ 7 về 0)
     reg       read_mode; // Cờ phân biệt Ghi / Đọc
 
@@ -36,7 +36,7 @@ module memory (
     // LOGIC TUẦN TỰ: ĐIỀU KHIỂN GHI / ĐỌC
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            count         <= 4'd0;
+            count         <= 3'd0;
             trace         <= 3'd7;
             read_mode     <= 1'b0;
             o_memory_done <= 1'b0;
@@ -57,7 +57,7 @@ module memory (
                     trellis_diagr[1][0] <= prev_st_01;
                     trellis_diagr[2][0] <= prev_st_10;
                     trellis_diagr[3][0] <= prev_st_11;
-                    count <= 4'd1; 
+                    count <= 3'd1; 
                 end 
                 else begin
                     // Các cột tiếp theo -> Ghi vào cột ở địa chỉ count
@@ -67,7 +67,7 @@ module memory (
                     trellis_diagr[3][count] <= prev_st_11;
                     
                     // Nếu vừa ghi xong cột cuối cùng (cột 7)
-                    if (count == 4'd7) begin
+                    if (count == 3'd7) begin
                         read_mode     <= 1'b1;  // Chuyển sang Giai đoạn Đọc
                         trace         <= 3'd7;  // Khởi tạo con trỏ trace ở cột 7
                         o_memory_done <= 1'b1;  // Bật cờ hand-shake tới khối Traceback
