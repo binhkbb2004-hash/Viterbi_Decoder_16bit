@@ -54,13 +54,12 @@ module traceback (
                 tracing   <= 1'b1;
                 count     <= 4'd1; // Đã xử lý xong nhịp đầu tiên
                 
-                // Bước 1: Lấy MSB của node đang đứng làm bit giải mã và dịch nó vào thanh ghi 
+                // B1: Lấy MSB của node đang đứng làm bit giải mã và dịch nó vào thanh ghi 
                 // (theo quy tắc của bộ mã hóa có giải thích trong spec <('))
                 temp_data    <= {target_node[1], temp_data[7:1]};
                 
-                // Bước 2: Lùi, ghi dấu chân tiếp theo vào current_node
-                current_node <= next_node;
-                
+                // B2: Lùi, ghi dấu chân tiếp theo vào current_node
+                current_node <= next_node; 
                 o_done       <= 1'b0;
             end 
             
