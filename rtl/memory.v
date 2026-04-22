@@ -97,7 +97,6 @@ module memory (
         end
     end
 
-    // LOGIC TỔ HỢP: XUẤT DỮ LIỆU ĐỌC
     // Xuất đồng thời 4 trạng thái tại cột địa chỉ trace
     assign bck_prev_st_00 = read_mode ? trellis_diagr[0][trace] : 2'b00;
     assign bck_prev_st_01 = read_mode ? trellis_diagr[1][trace] : 2'b00;
