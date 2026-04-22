@@ -37,8 +37,8 @@ module tb_viterbi_top();
 
         @(negedge clk);
         
-        // Input
-        i_data  = 16'b11_11_00_11_11_10_00_10; 
+        // Input 10-00-00-00-00-00-00-00
+        i_data  = 16'b10_00_00_00_00_00_00_00; 
         i_start = 1;
         
         @(negedge clk);

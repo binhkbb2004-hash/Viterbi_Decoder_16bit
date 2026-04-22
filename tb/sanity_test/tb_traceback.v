@@ -90,7 +90,7 @@ module tb_traceback();
         #25 rst_n = 1;
         @(negedge clk);
         
-        // Input
+        // Input 11-01-00-11-11-10-10-10
         i_data  = 16'b11_01_00_11_11_10_10_10;
         i_start = 1;
         
