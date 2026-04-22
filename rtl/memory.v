@@ -27,9 +27,9 @@ module memory (
     reg [1:0] trellis_diagr [0:3][0:7];
 
     // Các biến đếm nội bộ
-    reg [2:0] count;     // Biến đếm ghi (đếm từ 1 đến 7)
-    reg [2:0] trace;     // Biến đếm đọc (đếm từ 7 về 0)
-    reg       read_mode; // Cờ phân biệt Ghi / Đọc
+    reg [2:0] count; // Biến đếm ghi
+    reg [2:0] trace; // Biến đếm đọc
+    reg       read_mode; // Cờ phân biệt Ghi/Đọc
 
     integer i, j;
 
