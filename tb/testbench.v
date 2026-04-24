@@ -50,7 +50,7 @@ module testbench ();
 
         // Không mở được thì $stop để tránh vòng lặp chạy vô hạn (lần simulate đầu đã mắc phải <('))
         if (fd1 == 0 || fd2 == 0) begin
-            $display(" ERROR | Khong mo duoc 2 file txt");
+            $display(" ERROR | Khong mo duoc 2 file txt (Xem lai duong dan nhe)");
             $stop;
         end
 
