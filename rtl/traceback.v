@@ -33,8 +33,7 @@ module traceback (
             2'b00:   next_node = bck_prev_st_00;
             2'b01:   next_node = bck_prev_st_01;
             2'b10:   next_node = bck_prev_st_10;
-            2'b11:   next_node = bck_prev_st_11;
-            default: next_node = 2'b00;
+            default: next_node = bck_prev_st_11;
         endcase
     end
 
