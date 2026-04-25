@@ -41,12 +41,18 @@ module memory (
             read_mode     <= 1'b0;
             o_memory_done <= 1'b0;
             
-            // Xóa mảng nhớ về full 0
-            for (i = 0; i < 4; i = i + 1) begin
-                for (j = 0; j < 8; j = j + 1) begin
-                    trellis_diagr[i][j] <= 2'b00;
-                end
-            end
+            // Xóa mảng nhớ về full 0 (theo yêu cầu của TA thì k dùng for)
+            trellis_diagr[0][0] <= 2'b00; trellis_diagr[0][1] <= 2'b00; trellis_diagr[0][2] <= 2'b00; trellis_diagr[0][3] <= 2'b00;
+            trellis_diagr[0][4] <= 2'b00; trellis_diagr[0][5] <= 2'b00; trellis_diagr[0][6] <= 2'b00; trellis_diagr[0][7] <= 2'b00;
+        
+            trellis_diagr[1][0] <= 2'b00; trellis_diagr[1][1] <= 2'b00; trellis_diagr[1][2] <= 2'b00; trellis_diagr[1][3] <= 2'b00;
+            trellis_diagr[1][4] <= 2'b00; trellis_diagr[1][5] <= 2'b00; trellis_diagr[1][6] <= 2'b00; trellis_diagr[1][7] <= 2'b00;
+        
+            trellis_diagr[2][0] <= 2'b00; trellis_diagr[2][1] <= 2'b00; trellis_diagr[2][2] <= 2'b00; trellis_diagr[2][3] <= 2'b00;
+            trellis_diagr[2][4] <= 2'b00; trellis_diagr[2][5] <= 2'b00; trellis_diagr[2][6] <= 2'b00; trellis_diagr[2][7] <= 2'b00;
+        
+            trellis_diagr[3][0] <= 2'b00; trellis_diagr[3][1] <= 2'b00; trellis_diagr[3][2] <= 2'b00; trellis_diagr[3][3] <= 2'b00;
+            trellis_diagr[3][4] <= 2'b00; trellis_diagr[3][5] <= 2'b00; trellis_diagr[3][6] <= 2'b00; trellis_diagr[3][7] <= 2'b00;
         end 
         else begin
             // GIAI ĐOẠN GHI
