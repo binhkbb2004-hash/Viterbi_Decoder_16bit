@@ -44,11 +44,11 @@ module testbench ();
         #20;
         rst_n = 1;
 
-        // Đọc 2 file input, output mẫu (ghi cả đường dẫn cho đỡ lỗi)
+        // Đọc 2 file input, output mẫu (ghi cả đường dẫn cho lành)
         fd1 = $fopen("D:/VLSI_viterbi/tb/input.txt", "r");
         fd2 = $fopen("D:/VLSI_viterbi/tb/output.txt", "r");
 
-        // Không mở được thì $stop để tránh vòng lặp chạy vô hạn (lần simulate đầu đã mắc phải <('))
+        // K mở được thì $stop để tránh chạy vô hạn (lần simulate đầu đã mắc phải <('))
         if (fd1 == 0 || fd2 == 0) begin
             $display(" ERROR | Khong mo duoc 2 file txt (Xem lai duong dan nhe)");
             $stop;
