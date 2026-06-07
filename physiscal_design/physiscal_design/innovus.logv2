@@ -1,0 +1,51 @@
+[05/14 18:26:33      0s] 
+[05/14 18:26:33      0s] Cadence Innovus(TM) Implementation System.
+[05/14 18:26:33      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/14 18:26:33      0s] 
+[05/14 18:26:33      0s] Version:	v23.37-s090_1, built Mon Feb 9 16:09:58 PST 2026
+[05/14 18:26:33      0s] Options:	-stylus 
+[05/14 18:26:33      0s] Date:		Thu May 14 18:26:33 2026
+[05/14 18:26:33      0s] Host:		iclab (x86_64 w/Linux 4.18.0-553.111.1.el8_10.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz 40960KB)
+[05/14 18:26:33      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[05/14 18:26:33      0s] 
+[05/14 18:26:33      0s] License:
+[05/14 18:26:33      0s] 		[18:26:33.483769] Configured Lic search path (23.02-s006): /home/cadence/license/license.dat
+[05/14 18:26:33      0s] 
+[05/14 18:26:33      0s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[05/14 18:26:33      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[05/14 18:26:54     40s] Memory management switch to non-aggressive memory release mode.
+[05/14 18:26:54     40s] 
+[05/14 18:26:54     40s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[05/14 18:26:54     40s] 
+[05/14 18:26:54     41s] 
+[05/14 18:26:54     41s] 
+[05/14 18:26:57     47s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.37-s090_1 (64bit) 02/09/2026 16:09 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:27:01     52s] @(#)CDS: NanoRoute 23.37-s090_1 NR260126-2134/23_17-UB (database version 18.20.682_1) {superthreading v2.20}
+[05/14 18:27:01     52s] @(#)CDS: AAE 23.17-s025 (64bit) 02/09/2026 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:27:01     52s] @(#)CDS: CTE 23.17-s038_1 () Feb  4 2026 22:23:13 ( )
+[05/14 18:27:01     52s] @(#)CDS: SYNTECH 23.17-s006_1 () Jan 20 2026 01:15:57 ( )
+[05/14 18:27:01     52s] @(#)CDS: CPE v23.17-s060
+[05/14 18:27:01     52s] @(#)CDS: IQuantus/TQuantus 23.1.1-s583 (64bit) Mon Nov 24 21:09:39 PST 2025 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:27:01     52s] @(#)CDS: OA 22.61-p027 Wed May 14 22:25:16 2025
+[05/14 18:27:01     52s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[05/14 18:27:01     52s] @(#)CDS: RCDB 11.15.0
+[05/14 18:27:01     52s] @(#)CDS: STYLUS 23.16-s001_1 (07/11/2025 08:51 PDT)
+[05/14 18:27:01     52s] @(#)CDS: IntegrityPlanner-23.17-17130 (23.17) (2025-12-03 09:08:16+0800)
+[05/14 18:27:01     52s] @(#)CDS: SYNTHESIS_ENGINE 23.17-s085
+[05/14 18:27:01     52s] Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2062201_4e4855ea-e2fd-4209-a3ca-6b0f9720e863_iclab_iclab16_Fk3ZkU.
+
+[05/14 18:27:01     52s] Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2062201_4e4855ea-e2fd-4209-a3ca-6b0f9720e863_iclab_iclab16_Fk3ZkU.
+[05/14 18:27:01     52s] 
+[05/14 18:27:01     52s] Change the soft stacksize limit to 0.2%RAM (256 mbytes). Set global soft_stack_size_limit to change the value.
+[05/14 18:27:05     55s] Info: Process UID = 2062201 / 4e4855ea-e2fd-4209-a3ca-6b0f9720e863 / SynsmtvtI2
+[05/14 18:27:05     55s] 
+[05/14 18:27:05     55s] **INFO:  MMMC transition support version v31-84 
+[05/14 18:27:05     55s] 
+[05/14 18:27:10     61s] @innovus 1> 
+[05/14 18:27:58     64s] --------------------------------------------------------------------------------
+[05/14 18:27:58     64s] Exiting Innovus on Thu May 14 18:27:58 2026
+[05/14 18:27:58     64s]   Total CPU time:     0:01:05
+[05/14 18:27:58     64s]   Total real time:    0:01:27
+[05/14 18:27:58     64s]   Peak memory (main): 1880.20MB
+[05/14 18:27:58     64s] 
+[05/14 18:27:58     64s] 

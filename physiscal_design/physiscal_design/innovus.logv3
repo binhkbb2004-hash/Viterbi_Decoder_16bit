@@ -1,0 +1,984 @@
+[05/14 18:36:24      0s] 
+[05/14 18:36:24      0s] Cadence Innovus(TM) Implementation System.
+[05/14 18:36:24      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/14 18:36:24      0s] 
+[05/14 18:36:24      0s] Version:	v23.37-s090_1, built Mon Feb 9 16:09:58 PST 2026
+[05/14 18:36:24      0s] Options:	-stylus 
+[05/14 18:36:24      0s] Date:		Thu May 14 18:36:24 2026
+[05/14 18:36:24      0s] Host:		iclab (x86_64 w/Linux 4.18.0-553.111.1.el8_10.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz 40960KB)
+[05/14 18:36:24      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[05/14 18:36:24      0s] 
+[05/14 18:36:24      0s] License:
+[05/14 18:36:24      0s] 		[18:36:24.483777] Configured Lic search path (23.02-s006): /home/cadence/license/license.dat
+[05/14 18:36:24      0s] 
+[05/14 18:36:24      0s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[05/14 18:36:24      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[05/14 18:36:45     41s] Memory management switch to non-aggressive memory release mode.
+[05/14 18:36:45     41s] 
+[05/14 18:36:45     41s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[05/14 18:36:45     41s] 
+[05/14 18:36:45     41s] 
+[05/14 18:36:45     41s] 
+[05/14 18:36:48     47s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.37-s090_1 (64bit) 02/09/2026 16:09 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:36:52     52s] @(#)CDS: NanoRoute 23.37-s090_1 NR260126-2134/23_17-UB (database version 18.20.682_1) {superthreading v2.20}
+[05/14 18:36:52     52s] @(#)CDS: AAE 23.17-s025 (64bit) 02/09/2026 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:36:52     52s] @(#)CDS: CTE 23.17-s038_1 () Feb  4 2026 22:23:13 ( )
+[05/14 18:36:52     52s] @(#)CDS: SYNTECH 23.17-s006_1 () Jan 20 2026 01:15:57 ( )
+[05/14 18:36:52     52s] @(#)CDS: CPE v23.17-s060
+[05/14 18:36:52     52s] @(#)CDS: IQuantus/TQuantus 23.1.1-s583 (64bit) Mon Nov 24 21:09:39 PST 2025 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:36:52     52s] @(#)CDS: OA 22.61-p027 Wed May 14 22:25:16 2025
+[05/14 18:36:52     52s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[05/14 18:36:52     52s] @(#)CDS: RCDB 11.15.0
+[05/14 18:36:52     52s] @(#)CDS: STYLUS 23.16-s001_1 (07/11/2025 08:51 PDT)
+[05/14 18:36:52     52s] @(#)CDS: IntegrityPlanner-23.17-17130 (23.17) (2025-12-03 09:08:16+0800)
+[05/14 18:36:52     52s] @(#)CDS: SYNTHESIS_ENGINE 23.17-s085
+[05/14 18:36:52     52s] Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv.
+
+[05/14 18:36:52     52s] Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv.
+[05/14 18:36:52     52s] 
+[05/14 18:36:52     52s] Change the soft stacksize limit to 0.2%RAM (256 mbytes). Set global soft_stack_size_limit to change the value.
+[05/14 18:36:56     55s] Info: Process UID = 2127708 / b1e9508d-eab7-46fd-aeb5-cce35633b292 / pTBcTVLIFX
+[05/14 18:36:56     55s] 
+[05/14 18:36:56     55s] **INFO:  MMMC transition support version v31-84 
+[05/14 18:36:56     55s] 
+[05/14 18:37:01     61s] @innovus 1> read_db postRouteOpt
+[05/14 18:38:09     66s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+#% Begin load design ... (date=05/14 18:38:09, mem=1911.9M)
+[05/14 18:38:11     68s] AAE_INFO: switching set_db delaycal_enable_si from false to true ...
+[05/14 18:38:11     68s] AAE_INFO: The setting is changed from false to true in set_db delaycal_enable_si
+[05/14 18:38:11     68s] Loading design 'viterbi_top' saved by 'Innovus' '23.37-s090_1' on 'Thu May 14 18:09:17 2026'.
+[05/14 18:38:11     68s] Reading max_timing timing library '/home/iclab16/Desktop/viterbi_binh/lib/sky130_ss_1.62_125_nldm.lib' ...
+[05/14 18:38:12     68s] Read 112 cells in library 'sky130_ss_1.62_125' 
+[05/14 18:38:12     68s] Reading min_timing timing library '/home/iclab16/Desktop/viterbi_binh/lib/sky130_ff_1.98_0_nldm.lib' ...
+[05/14 18:38:12     69s] Read 112 cells in library 'sky130_ff_1.98_0' 
+[05/14 18:38:12     69s] Ending "PreSetAnalysisView" (total cpu=0:00:01.0, real=0:00:01.0, peak res=1998.8M, current mem=1930.5M)
+[05/14 18:38:12     69s] 
+[05/14 18:38:12     69s] Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T.tlef ...
+[05/14 18:38:12     69s] 
+[05/14 18:38:12     69s] Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T.lef ...
+[05/14 18:38:12     69s] Set DBUPerIGU to M2 pitch 460.
+[05/14 18:38:12     69s] 
+[05/14 18:38:12     69s] Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T_phyCells.lef ...
+[05/14 18:38:12     69s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/14 18:38:12     69s] Type 'man IMPLF-200' for more detail.
+[05/14 18:38:12     69s] 
+[05/14 18:38:12     69s] ##  Check design process and node:  
+[05/14 18:38:12     69s] ##  Both design process and tech node are not set.
+[05/14 18:38:12     69s] 
+[05/14 18:38:12     69s] Loading view definition file from /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viewDefinition.tcl
+[05/14 18:38:12     69s] % Begin Load netlist data ... (date=05/14 18:38:12, mem=1938.9M)
+[05/14 18:38:12     69s] *** Begin netlist parsing (mem=1881.2M) ***
+[05/14 18:38:12     69s] Created 112 new cells from 2 timing libraries.
+[05/14 18:38:12     69s] Reading netlist ...
+[05/14 18:38:12     69s] Backslashed names will retain backslash and a trailing blank character.
+[05/14 18:38:12     69s] Reading verilogBinary netlist '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.v.bin'
+[05/14 18:38:12     69s] 
+[05/14 18:38:12     69s] *** Memory Usage v#1 (Current mem = 1881.168M, initial mem = 866.945M) ***
+[05/14 18:38:12     69s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1881.2M) ***
+[05/14 18:38:12     69s] % End Load netlist data ... (date=05/14 18:38:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1949.0M, current mem=1949.0M)
+[05/14 18:38:12     69s] Top level cell is viterbi_top.
+[05/14 18:38:13     70s] Hooked 224 DB cells to tlib cells.
+[05/14 18:38:13     70s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1964.8M, current mem=1964.8M)
+[05/14 18:38:13     70s] Starting recursive module instantiation check.
+[05/14 18:38:13     70s] No recursion found.
+[05/14 18:38:13     70s] Building hierarchical netlist for Cell viterbi_top ...
+[05/14 18:38:13     70s] ***** UseNewTieNetMode *****.
+[05/14 18:38:13     70s] *** Netlist is unique.
+[05/14 18:38:13     70s] Setting Std. cell height to 4135 DBU (smallest netlist inst).
+[05/14 18:38:13     70s] ** info: there are 237 modules.
+[05/14 18:38:13     70s] ** info: there are 868 stdCell insts.
+[05/14 18:38:13     70s] ** info: there are 868 stdCell insts with at least one signal pin.
+[05/14 18:38:13     70s] ** info: there are 867 multi-height stdCell insts (57 stdCells)
+[05/14 18:38:14     70s] 
+[05/14 18:38:14     70s] *** Memory Usage v#1 (Current mem = 1918.668M, initial mem = 866.945M) ***
+[05/14 18:38:14     70s] *info: set bottom ioPad orient R0
+[05/14 18:38:14     70s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/14 18:38:14     70s] Type 'man IMPFP-3961' for more detail.
+[05/14 18:38:14     70s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/14 18:38:14     70s] Type 'man IMPFP-3961' for more detail.
+[05/14 18:38:14     70s] Start create_tracks
+[05/14 18:38:14     70s] Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+[05/14 18:38:14     70s] Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+[05/14 18:38:14     70s] Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+[05/14 18:38:14     70s] Loading preference file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/gui.pref.tcl ...
+[05/14 18:38:14     71s] Effort level <high> specified for tdgp_reg2reg_default path_group
+[05/14 18:38:14     71s] Slack adjustment of -0 applied on tdgp_reg2reg_default path_group
+[05/14 18:38:14     71s] add_rings command will ignore shorts while creating rings.
+[05/14 18:38:14     71s] add_rings command will disallow rings to go over rows.
+[05/14 18:38:14     71s] add_rings command will consider rows while creating rings.
+[05/14 18:38:14     71s] The ring targets are set to core/block ring wires.
+[05/14 18:38:14     71s] add_stripes will allow jog to connect padcore ring and block ring.
+[05/14 18:38:14     71s] 
+[05/14 18:38:14     71s] Stripes will not extend to closest target.
+[05/14 18:38:14     71s] When breaking rings, the power planner will consider the existence of blocks.
+[05/14 18:38:14     71s] add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[05/14 18:38:14     71s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[05/14 18:38:14     71s] Stripes will not be created over regions without power planning wires.
+[05/14 18:38:14     71s] Offset for stripe breaking is set to 0.
+[05/14 18:38:14     71s] Stripes will stop at the boundary of the specified area.
+[05/14 18:38:14     71s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[05/14 18:38:14     71s] Change floorplan default-technical-site to 'CoreSite'.
+[05/14 18:38:14     71s] Extraction setup Delayed 
+[05/14 18:38:14     71s] *Info: initialize multi-corner CTS.
+[05/14 18:38:15     71s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:01.0, peak res=2452.4M, current mem=2018.4M)
+[05/14 18:38:15     71s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/14 18:38:15     71s] 
+[05/14 18:38:15     71s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/14 18:38:15     71s] Summary for sequential cells identification: 
+[05/14 18:38:15     71s]   Identified SBFF number: 16
+[05/14 18:38:15     71s]   Identified MBFF number: 0
+[05/14 18:38:15     71s]   Identified SB Latch number: 2
+[05/14 18:38:15     71s]   Identified MB Latch number: 0
+[05/14 18:38:15     71s]   Not identified SBFF number: 0
+[05/14 18:38:15     71s]   Not identified MBFF number: 0
+[05/14 18:38:15     71s]   Not identified SB Latch number: 0
+[05/14 18:38:15     71s]   Not identified MB Latch number: 0
+[05/14 18:38:15     71s]   Number of sequential cells which are not FFs: 6
+[05/14 18:38:15     71s] Total number of combinational cells: 85
+[05/14 18:38:15     71s] Total number of sequential cells: 24
+[05/14 18:38:15     71s] Total number of tristate cells: 3
+[05/14 18:38:15     71s] Total number of level shifter cells: 0
+[05/14 18:38:15     71s] Total number of power gating cells: 0
+[05/14 18:38:15     71s] Total number of isolation cells: 0
+[05/14 18:38:15     71s] Total number of power switch cells: 0
+[05/14 18:38:15     71s] Total number of pulse generator cells: 0
+[05/14 18:38:15     71s] Total number of always on buffers: 0
+[05/14 18:38:15     71s] Total number of retention cells: 0
+[05/14 18:38:15     71s] Total number of physical cells: 0
+[05/14 18:38:15     71s] List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 CLKBUFX8 BUFX8 BUFX16
+[05/14 18:38:15     71s] Total number of usable buffers: 7
+[05/14 18:38:15     71s] List of unusable buffers:
+[05/14 18:38:15     71s] Total number of unusable buffers: 0
+[05/14 18:38:15     71s] List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+[05/14 18:38:15     71s] Total number of usable inverters: 9
+[05/14 18:38:15     71s] List of unusable inverters:
+[05/14 18:38:15     71s] Total number of unusable inverters: 0
+[05/14 18:38:15     71s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4[05/14 18:38:15     71s] 
+[05/14 18:38:15     71s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+
+[05/14 18:38:15     71s] Total number of identified usable delay cells: 4
+[05/14 18:38:15     71s] List of identified unusable delay cells:
+[05/14 18:38:15     71s] Total number of identified unusable delay cells: 0
+[05/14 18:38:15     71s] 
+[05/14 18:38:15     71s] TimeStamp Deleting Cell Server Begin ...
+[05/14 18:38:15     71s] 
+[05/14 18:38:15     71s] TimeStamp Deleting Cell Server End ...
+[05/14 18:38:15     71s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2466.3M, current mem=2466.2M)
+[05/14 18:38:15     71s] 
+[05/14 18:38:15     71s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/14 18:38:15     71s] Summary for sequential cells identification: 
+[05/14 18:38:15     71s]   Identified SBFF number: 16
+[05/14 18:38:15     71s]   Identified MBFF number: 0
+[05/14 18:38:15     71s]   Identified SB Latch number: 2
+[05/14 18:38:15     71s]   Identified MB Latch number: 0
+[05/14 18:38:15     71s]   Not identified SBFF number: 0
+[05/14 18:38:15     71s]   Not identified MBFF number: 0
+[05/14 18:38:15     71s]   Not identified SB Latch number: 0
+[05/14 18:38:15     71s]   Not identified MB Latch number: 0
+[05/14 18:38:15     71s]   Number of sequential cells which are not FFs: 6
+[05/14 18:38:15     71s]  Visiting view : wc
+[05/14 18:38:15     71s]    : PowerDomain = none : Weighted F : unweighted  = 60.60 (1.000) with rcCorner = 0
+[05/14 18:38:15     71s]    : PowerDomain = none : Weighted F : unweighted  = 51.30 (1.000) with rcCorner = -1
+[05/14 18:38:15     71s]  Visiting view : bc
+[05/14 18:38:15     71s]    : PowerDomain = none : Weighted F : unweighted  = 27.50 (1.000) with rcCorner = 0
+[05/14 18:38:15     71s]    : PowerDomain = none : Weighted F : unweighted  = 21.60 (1.000) with rcCorner = -1
+[05/14 18:38:15     71s] 
+[05/14 18:38:15     71s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/14 18:38:15     71s] 
+[05/14 18:38:15     71s] TimeStamp Deleting Cell Server Begin ...
+[05/14 18:38:15     71s] 
+[05/14 18:38:15     71s] TimeStamp Deleting Cell Server End ...
+[05/14 18:38:15     71s] Reading floorplan file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.fp.gz (mem = 2381.4M).
+[05/14 18:38:15     72s] % Begin Load floorplan data ... (date=05/14 18:38:15, mem=2468.8M)
+[05/14 18:38:15     72s] *info: reset 1041 existing net BottomPreferredLayer and AvoidDetour
+[05/14 18:38:15     72s] Deleting old partition specification.
+[05/14 18:38:15     72s] Set FPlanBox to (0 0 152260 144440)
+[05/14 18:38:15     72s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/14 18:38:15     72s] Type 'man IMPFP-3961' for more detail.
+[05/14 18:38:15     72s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/14 18:38:15     72s] Type 'man IMPFP-3961' for more detail.
+[05/14 18:38:15     72s]  ... processed partition successfully.
+[05/14 18:38:15     72s] Reading binary special route file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.fp.spr.gz (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version: 1)
+[05/14 18:38:15     72s] Convert 0 swires and 0 svias from compressed groups
+[05/14 18:38:15     72s] 18 swires and 32 svias were compressed
+[05/14 18:38:15     72s] 18 swires and 20 svias were decompressed from small or sparse groups
+[05/14 18:38:15     72s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2470.2M, current mem=2470.2M)
+[05/14 18:38:15     72s] There are 6 nets with weight being set
+[05/14 18:38:15     72s] There are 6 nets with bottomPreferredRoutingLayer being set
+[05/14 18:38:15     72s] There are 7 nets with avoidDetour being set
+[05/14 18:38:15     72s] Extracting standard cell pins and blockage ...... 
+[05/14 18:38:15     72s] Pin and blockage extraction finished
+[05/14 18:38:15     72s] Delete all existing relative floorplan constraints.
+[05/14 18:38:15     72s] % End Load floorplan data ... (date=05/14 18:38:15, total cpu=0:00:00.1, real=0:00:00.0, peak res=2470.8M, current mem=2470.8M)
+[05/14 18:38:15     72s] Reading congestion map file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.route.congmap.gz ...
+[05/14 18:38:15     72s] % Begin Load SymbolTable ... (date=05/14 18:38:15, mem=2470.8M)
+[05/14 18:38:15     72s] routingBox: (0 0) (152260 144440)
+[05/14 18:38:15     72s] Suppress "**WARN ..." messages.
+[05/14 18:38:15     72s] coreBox:    (10120 10120) (142140 134320)
+[05/14 18:38:15     72s] Un-suppress "**WARN ..." messages.
+[05/14 18:38:15     72s] % End Load SymbolTable ... (date=05/14 18:38:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=2471.5M, current mem=2471.5M)
+[05/14 18:38:15     72s] Loading place ...
+[05/14 18:38:15     72s] % Begin Load placement data ... (date=05/14 18:38:15, mem=2471.5M)
+[05/14 18:38:15     72s] Reading placement file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.place.gz.
+[05/14 18:38:15     72s] ** Reading stdCellPlacement_binary (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version# 2) ...
+[05/14 18:38:15     72s] Read Views for adaptive view pruning ...
+[05/14 18:38:15     72s] Read 0 views from Binary DB for adaptive view pruning
+[05/14 18:38:15     72s] *** applyConnectGlobalNets disabled.
+[05/14 18:38:15     72s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2381.4M) ***
+[05/14 18:38:15     72s] Total net length = 2.313e+04 (1.338e+04 9.745e+03) (ext = 1.311e+03)
+[05/14 18:38:15     72s] % End Load placement data ... (date=05/14 18:38:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=2472.2M, current mem=2472.1M)
+[05/14 18:38:15     72s] Reading PG file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.pg.gz, version#2, (Created by Innovus v23.37-s090_1 on       Thu May 14 18:09:16 2026)
+[05/14 18:38:15     72s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2381.4M) ***
+[05/14 18:38:15     72s] % Begin Load routing data ... (date=05/14 18:38:15, mem=2472.4M)
+[05/14 18:38:15     72s] Reading routing file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.route.gz.
+[05/14 18:38:16     72s] Reading Innovus routing data (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026 Format: 23.1) ...
+[05/14 18:38:16     72s] *** Total 1013 nets are successfully restored.
+[05/14 18:38:16     72s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=2381.4M) ***
+[05/14 18:38:16     72s] % End Load routing data ... (date=05/14 18:38:16, total cpu=0:00:00.1, real=0:00:01.0, peak res=2474.0M, current mem=2473.0M)
+[05/14 18:38:16     72s] TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[05/14 18:38:16     72s] Reading property file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.prop
+[05/14 18:38:16     72s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2381.4M) ***
+[05/14 18:38:16     72s] Reading dirtyarea snapshot file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.db.da.gz (Create by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version: 8).
+[05/14 18:38:16     72s] add_rings command will ignore shorts while creating rings.
+[05/14 18:38:16     72s] add_rings command will disallow rings to go over rows.
+[05/14 18:38:16     72s] add_rings command will consider rows while creating rings.
+[05/14 18:38:16     72s] The ring targets are set to core/block ring wires.
+[05/14 18:38:16     72s] add_stripes will allow jog to connect padcore ring and block ring.
+[05/14 18:38:16     72s] 
+[05/14 18:38:16     72s] Stripes will not extend to closest target.
+[05/14 18:38:16     72s] When breaking rings, the power planner will consider the existence of blocks.
+[05/14 18:38:16     72s] add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[05/14 18:38:16     72s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[05/14 18:38:16     72s] Stripes will not be created over regions without power planning wires.
+[05/14 18:38:16     72s] Offset for stripe breaking is set to 0.
+[05/14 18:38:16     72s] Stripes will stop at the boundary of the specified area.
+[05/14 18:38:16     72s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[05/14 18:38:16     72s] Change floorplan default-technical-site to 'CoreSite'.
+[05/14 18:38:16     72s] eee: Design meta data check started
+[05/14 18:38:16     72s] Loading preRoute extraction data from directory '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/extraction/' ...
+[05/14 18:38:16     72s] eee: Design meta data check completed
+[05/14 18:38:16     72s] Extraction setup Started for TopCell viterbi_top 
+[05/14 18:38:16     72s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[05/14 18:38:16     72s] eee: __QRC_SADV_USE_LE__ is set 0
+[05/14 18:38:16     72s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[05/14 18:38:16     72s] Generating auto layer map file.
+[05/14 18:38:16     72s] eee: cut Layer Id 33 mapped to tech Id 6 of Layer mcon 
+[05/14 18:38:16     72s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[05/14 18:38:16     72s] eee:       33	    mcon	        6	       mcon	Via            
+[05/14 18:38:16     72s] eee:        1	    met1	        7	     metal1	Metal          
+[05/14 18:38:16     72s] eee:       34	     via	        8	       via1	Via            
+[05/14 18:38:16     72s] eee:        2	    met2	        9	     metal2	Metal          
+[05/14 18:38:16     72s] eee:       35	    via2	       10	       via2	Via            
+[05/14 18:38:16     72s] eee:        3	    met3	       11	     metal3	Metal          
+[05/14 18:38:16     72s] eee:       36	    via3	       12	       via3	Via            
+[05/14 18:38:16     72s] eee:        4	    met4	       13	     metal4	Metal          
+[05/14 18:38:16     72s] eee:       37	    via4	       14	       via4	Via            
+[05/14 18:38:16     72s] eee:        5	    met5	       15	     metal5	Metal          
+[05/14 18:38:16     72s] eee: TechFile: /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen
+[05/14 18:38:16     72s] eee: HoWee  : 0 0 0 0 0 
+[05/14 18:38:16     72s] eee: Erosn  : 0 0 0 0 0 
+[05/14 18:38:16     72s] eee: nrColor: 0 0 0 0 0 
+[05/14 18:38:16     72s] eee: Save / Restore of RC patterns enabled 
+[05/14 18:38:16     72s] eee: Pattern meta data check started
+[05/14 18:38:16     72s] eee: Pattern meta data check completed
+[05/14 18:38:16     72s] eee: Pattern data restore started
+[05/14 18:38:16     72s] Loading preRoute extracted patterns from file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.techData.gz' ...
+[05/14 18:38:16     72s] eee: Pattern data restore completed
+[05/14 18:38:16     72s] Completed (cpu: 0:00:00.3 real: 0:00:00.0)
+[05/14 18:38:16     72s] Set Shrink Factor to 1.00000
+[05/14 18:38:16     72s] Summary of Active RC-Corners : 
+[05/14 18:38:16     72s]  
+[05/14 18:38:16     72s]  Analysis View: wc
+[05/14 18:38:16     72s]     RC-Corner Name        : rccorners
+[05/14 18:38:16     72s]     RC-Corner Index       : 0
+[05/14 18:38:16     72s]     RC-Corner Temperature : 25 Celsius
+[05/14 18:38:16     72s]     RC-Corner Cap Table   : ''
+[05/14 18:38:16     72s]     RC-Corner PreRoute Res Factor         : 1
+[05/14 18:38:16     72s]     RC-Corner PreRoute Cap Factor         : 1
+[05/14 18:38:16     72s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/14 18:38:16     72s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/14 18:38:16     72s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/14 18:38:16     72s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/14 18:38:16     72s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/14 18:38:16     72s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/14 18:38:16     72s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/14 18:38:16     72s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/14 18:38:16     72s]     RC-Corner Technology file: '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen'
+[05/14 18:38:16     72s]  
+[05/14 18:38:16     72s]  Analysis View: bc
+[05/14 18:38:16     72s]     RC-Corner Name        : rccorners
+[05/14 18:38:16     72s]     RC-Corner Index       : 0
+[05/14 18:38:16     72s]     RC-Corner Temperature : 25 Celsius
+[05/14 18:38:16     72s]     RC-Corner Cap Table   : ''
+[05/14 18:38:16     72s]     RC-Corner PreRoute Res Factor         : 1
+[05/14 18:38:16     72s]     RC-Corner PreRoute Cap Factor         : 1
+[05/14 18:38:16     72s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/14 18:38:16     72s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/14 18:38:16     72s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/14 18:38:16     72s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/14 18:38:16     72s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/14 18:38:16     72s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/14 18:38:16     72s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/14 18:38:16     72s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/14 18:38:16     72s]     RC-Corner Technology file: '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen'
+[05/14 18:38:16     72s] eee: RC Grid memory allocated = 1500 (5 X 5 X 5 X 12b)
+[05/14 18:38:16     72s] eee: Grid density data restore started
+[05/14 18:38:16     72s] eee: Grid density data restore completed
+[05/14 18:38:16     72s] eee: pegSigSF=1.070000
+[05/14 18:38:16     72s] eee: Blockage data restore started... [05/14 18:38:16     72s] Initializing multi-corner resistance tables ...
+completed.
+[05/14 18:38:16     72s] eee: Grid unit RC data restore started
+[05/14 18:38:16     72s] eee:     Restore started for corner rccorners
+[05/14 18:38:16     72s] eee:         Current session: rccorners Tech: /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen 25.000000 1.000000 1.000000 
+[05/14 18:38:16     72s] eee:         Saved   session: rccorners Tech: ../qrc/qrcTechFile_RCgen 25.000000 1.000000 1.000000 
+[05/14 18:38:16     72s] eee:     Restore completed for corner rccorners
+[05/14 18:38:16     72s] eee: Grid unit RC data restore completed
+[05/14 18:38:16     72s] eee: l=1 avDens=0.152811 usedTrk=220.047753 availTrk=1440.000000 sigTrk=220.047753
+[05/14 18:38:16     72s] eee: l=2 avDens=0.209631 usedTrk=301.869034 availTrk=1440.000000 sigTrk=301.869034
+[05/14 18:38:16     72s] eee: l=3 avDens=0.218357 usedTrk=237.114059 availTrk=1085.901639 sigTrk=237.114059
+[05/14 18:38:16     72s] eee: l=4 avDens=0.171854 usedTrk=185.099296 availTrk=1077.073171 sigTrk=185.099296
+[05/14 18:38:16     72s] eee: l=5 avDens=0.391966 usedTrk=70.939396 availTrk=180.983607 sigTrk=70.939396
+[05/14 18:38:16     72s] eee: LAM-FP: thresh=1 ; dimX=331.000000 ; dimY=314.000000 ; multX=1.000000 ; multY=1.000000 ; minP=460 ; fpMult=1.000000 ;
+[05/14 18:38:16     72s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.330195 uaWl=1.000000 uaWlH=0.240300 aWlH=0.000000 lMod=0 pMax=0.865400 pMod=80 pModAss=50 wcR=0.332500 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.000000 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/14 18:38:16     72s] eee: dbu = 1000, Design = [ll(0.000000, 0.000000) ur(152.260000, 144.440000)], Layers = [f(5) b(0)], Grid size = 41.400000 um, Grid Dim = (4 X 4)
+[05/14 18:38:16     72s] eee: Metal Layers Info:
+[05/14 18:38:16     72s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 18:38:16     72s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/14 18:38:16     72s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 18:38:16     72s] eee: |     met1 |   1 |   0.140 |   0.140 |   0.460 |  0.181 |   0.89 | H | 0 |  1 |
+[05/14 18:38:16     72s] eee: |     met2 |   2 |   0.140 |   0.140 |   0.460 |  0.182 |   0.89 | V | 0 |  1 |
+[05/14 18:38:16     72s] eee: |     met3 |   3 |   0.300 |   0.300 |   0.610 |  0.335 |   0.16 | H | 0 |  1 |
+[05/14 18:38:16     72s] eee: |     met4 |   4 |   0.300 |   0.300 |   0.615 |  0.311 |   0.16 | V | 0 |  1 |
+[05/14 18:38:16     72s] eee: |     met5 |   5 |   1.600 |   1.600 |   3.660 |  0.260 |   0.02 | H | 0 |  1 |
+[05/14 18:38:16     72s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 18:38:16     72s] eee: uC/uR for corner rccorners, min-width/min-spacing, 30 perc over/under densities.
+[05/14 18:38:16     72s] eee: +-----------------------NDR Info-----------------------+
+[05/14 18:38:16     72s] eee: NDR Count = 0, Fake NDR = 0
+[05/14 18:38:16     72s] Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+[05/14 18:38:16     72s] Restore PreRoute all RC Grid data successful.[05/14 18:38:16     72s] Start generating vias ..
+### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=1069576481 routing_via=1 timing=1 sns=1 ppa_info=1
+[05/14 18:38:16     72s] #Skip building auto via since it is not turned on.
+[05/14 18:38:16     72s] Extracting standard cell pins and blockage ...... 
+[05/14 18:38:16     72s] Pin and blockage extraction finished
+[05/14 18:38:16     72s] Via generation completed.
+[05/14 18:38:16     72s] % Begin Load power constraints ... (date=05/14 18:38:16, mem=2504.1M)
+[05/14 18:38:16     72s] source /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top_power_constraints.tcl
+[05/14 18:38:16     72s] 'set_default_switching_activity' finished successfully.
+[05/14 18:38:16     72s] % End Load power constraints ... (date=05/14 18:38:16, total cpu=0:00:00.1, real=0:00:00.0, peak res=2526.0M, current mem=2526.0M)
+[05/14 18:38:16     72s] % Begin load AAE data ... (date=05/14 18:38:16, mem=2552.7M)
+[05/14 18:38:17     73s] **WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[05/14 18:38:17     73s] AAE DB initialization (MEM=2559.417969 CPU=0:00:00.0 REAL=0:00:00.0) 
+[05/14 18:38:17     73s] % End load AAE data ... (date=05/14 18:38:17, total cpu=0:00:00.6, real=0:00:01.0, peak res=2559.5M, current mem=2559.5M)
+[05/14 18:38:17     73s] Restoring CCOpt config...
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/14 18:38:17     73s] Summary for sequential cells identification: 
+[05/14 18:38:17     73s]   Identified SBFF number: 16
+[05/14 18:38:17     73s]   Identified MBFF number: 0
+[05/14 18:38:17     73s]   Identified SB Latch number: 2
+[05/14 18:38:17     73s]   Identified MB Latch number: 0
+[05/14 18:38:17     73s]   Not identified SBFF number: 0
+[05/14 18:38:17     73s]   Not identified MBFF number: 0
+[05/14 18:38:17     73s]   Not identified SB Latch number: 0
+[05/14 18:38:17     73s]   Not identified MB Latch number: 0
+[05/14 18:38:17     73s]   Number of sequential cells which are not FFs: 6
+[05/14 18:38:17     73s]  Visiting view : wc
+[05/14 18:38:17     73s]    : PowerDomain = none : Weighted F : unweighted  = 64.10 (1.000) with rcCorner = 0
+[05/14 18:38:17     73s]    : PowerDomain = none : Weighted F : unweighted  = 51.30 (1.000) with rcCorner = -1
+[05/14 18:38:17     73s]  Visiting view : bc
+[05/14 18:38:17     73s]    : PowerDomain = none : Weighted F : unweighted  = 30.00 (1.000) with rcCorner = 0
+[05/14 18:38:17     73s]    : PowerDomain = none : Weighted F : unweighted  = 21.60 (1.000) with rcCorner = -1
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/14 18:38:17     73s]   Extracting original clock gating for clk...
+[05/14 18:38:17     73s]     clock_tree clk contains 124 sinks and 0 clock gates.
+[05/14 18:38:17     73s]   Extracting original clock gating for clk done.
+[05/14 18:38:17     73s]   The skew group clk/sdc_cons was created. It contains 124 sinks and 1 sources.
+[05/14 18:38:17     73s]   The skew group clk/sdc_cons was created. It contains 124 sinks and 1 sources.
+[05/14 18:38:17     73s] Restoring CCOpt config done.
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] TimeStamp Deleting Cell Server Begin ...
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] TimeStamp Deleting Cell Server End ...
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/14 18:38:17     73s] Summary for sequential cells identification: 
+[05/14 18:38:17     73s]   Identified SBFF number: 16
+[05/14 18:38:17     73s]   Identified MBFF number: 0
+[05/14 18:38:17     73s]   Identified SB Latch number: 2
+[05/14 18:38:17     73s]   Identified MB Latch number: 0
+[05/14 18:38:17     73s]   Not identified SBFF number: 0
+[05/14 18:38:17     73s]   Not identified MBFF number: 0
+[05/14 18:38:17     73s]   Not identified SB Latch number: 0
+[05/14 18:38:17     73s]   Not identified MB Latch number: 0
+[05/14 18:38:17     73s]   Number of sequential cells which are not FFs: 6
+[05/14 18:38:17     73s] Total number of combinational cells: 85
+[05/14 18:38:17     73s] Total number of sequential cells: 24
+[05/14 18:38:17     73s] Total number of tristate cells: 3
+[05/14 18:38:17     73s] Total number of level shifter cells: 0
+[05/14 18:38:17     73s] Total number of power gating cells: 0
+[05/14 18:38:17     73s] Total number of isolation cells: 0
+[05/14 18:38:17     73s] Total number of power switch cells: 0
+[05/14 18:38:17     73s] Total number of pulse generator cells: 0
+[05/14 18:38:17     73s] Total number of always on buffers: 0
+[05/14 18:38:17     73s] Total number of retention cells: 0
+[05/14 18:38:17     73s] Total number of physical cells: 0
+[05/14 18:38:17     73s] List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 CLKBUFX8 BUFX8 BUFX16
+[05/14 18:38:17     73s] Total number of usable buffers: 7
+[05/14 18:38:17     73s] List of unusable buffers:
+[05/14 18:38:17     73s] Total number of unusable buffers: 0
+[05/14 18:38:17     73s] List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+[05/14 18:38:17     73s] Total number of usable inverters: 9
+[05/14 18:38:17     73s] List of unusable inverters:
+[05/14 18:38:17     73s] Total number of unusable inverters: 0
+[05/14 18:38:17     73s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+
+[05/14 18:38:17     73s] Total number of identified usable delay cells: 4
+[05/14 18:38:17     73s] List of identified unusable delay cells:
+[05/14 18:38:17     73s] Total number of identified unusable delay cells: 0
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] TimeStamp Deleting Cell Server Begin ...
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] TimeStamp Deleting Cell Server End ...
+[05/14 18:38:17     73s] #% End load design ... (date=05/14 18:38:17, total cpu=0:00:07.6, real=0:00:08.0, peak res=2583.2M, current mem=2564.4M)
+[05/14 18:38:17     73s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] *** Summary of all messages that are not suppressed in this session:
+[05/14 18:38:17     73s] Severity  ID               Count  Summary                                  
+[05/14 18:38:17     73s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/14 18:38:17     73s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/14 18:38:17     73s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[05/14 18:38:17     73s] *** Message Summary: 6 warning(s), 0 error(s)
+[05/14 18:38:17     73s] 
+[05/14 18:38:17     73s] 0
+[05/14 18:38:17     73s] @innovus 2> time_design -post_route
+*** time_design #1 [begin] () : totSession cpu/real = 0:01:17.3/0:02:21.7 (0.5), mem = 2840.7M
+[05/14 18:38:47     76s] Info: 1 threads available for lower-level modules during optimization.
+[05/14 18:38:47     76s]  Reset EOS DB
+[05/14 18:38:47     76s] Ignoring AAE DB Resetting ...
+[05/14 18:38:47     76s] tQuantus: Need to rerun tQuantus because the top cell's isRCExtracted() is false.
+[05/14 18:38:47     76s] ### Net info: total nets: 1041
+[05/14 18:38:47     76s] ### Net info: dirty nets: 0
+[05/14 18:38:47     76s] ### Net info: marked as disconnected nets: 0
+[05/14 18:38:47     76s] ### Net info: fully routed nets: 923
+[05/14 18:38:47     76s] ### Net info: trivial (< 2 pins) nets: 118
+[05/14 18:38:47     76s] ### Net info: unrouted nets: 0
+[05/14 18:38:47     76s] ### Net info: re-extraction nets: 0
+[05/14 18:38:47     76s] ### Net info: ignored nets: 0
+[05/14 18:38:47     76s] ### Net info: skip routing nets: 0
+[05/14 18:38:47     76s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:47     76s] ### import design signature (2): route=1449766829 fixed_route=1449766829 flt_obj=0 vio=1905142130 swire=282492057 shield_wire=1 net_attr=1431904519 dirty_area=0 del_dirty_area=0 cell=1749981709 placement=1427296102 pin_access=1 inst_pattern=1 inst_orient=1 via=1069576481 routing_via=1 timing=1872938290 sns=1872938290 ppa_info=1923552800
+[05/14 18:38:47     76s] #Extract in post route mode
+[05/14 18:38:47     76s] #Finish check_net_pin_list step Enter extract_rc_in_nr_cmd
+[05/14 18:38:47     76s] ### init rcell_view design signature (3): route=1449766829 flt_obj=0 net_attr=1431904519 dirty_area=0 del_dirty_area=0
+[05/14 18:38:47     76s] #Fast data preparation for tQuantus.
+[05/14 18:38:47     76s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:47     76s] #Start routing data preparation on Thu May 14 18:38:47 2026
+[05/14 18:38:47     76s] #
+[05/14 18:38:47     76s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:47     76s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:47     76s] #WARNING (NRDB-2040) Rule LEF_DEFAULT doesn't specify any vias that satisfy all of the area rules for layer met3 
+[05/14 18:38:47     76s] # met1         H   Track-Pitch = 0.4600    Line-2-Via Pitch = 0.3400
+[05/14 18:38:47     76s] # met2         V   Track-Pitch = 0.4600    Line-2-Via Pitch = 0.3400
+[05/14 18:38:47     76s] # met3         H   Track-Pitch = 0.6100    Line-2-Via Pitch = 0.6100
+[05/14 18:38:47     76s] # met4         V   Track-Pitch = 0.6150    Line-2-Via Pitch = 0.6150
+[05/14 18:38:47     76s] # met5         H   Track-Pitch = 3.6600    Line-2-Via Pitch = 3.2000
+[05/14 18:38:47     76s] #Regenerating Ggrids automatically.
+[05/14 18:38:47     76s] #Auto generating G-grids with size=15 tracks, using layer met3's pitch = 0.6150.
+[05/14 18:38:47     76s] #Using automatically generated G-grids.
+[05/14 18:38:47     76s] #Done routing data preparation.
+[05/14 18:38:47     76s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2716.10 (MB), peak = 2716.10 (MB)
+[05/14 18:38:47     76s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:47     76s] #Start routing data preparation on Thu May 14 18:38:47 2026
+[05/14 18:38:47     76s] #
+[05/14 18:38:47     76s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:47     76s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:47     76s] #shield_layer  1: layer_id= 4 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+[05/14 18:38:47     76s] #shield_layer  2: layer_id= 6 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+[05/14 18:38:47     76s] #shield_layer  3: layer_id= 8 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+[05/14 18:38:47     76s] #shield_layer  4: layer_id=10 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+[05/14 18:38:47     76s] #shield_layer  5: layer_id=12 shield_wire_on_grid=1 shield_via_on_grid=1 is_hard_wire_on_grid=0 allow_ww=0
+[05/14 18:38:47     76s] #Bottom routing layer index=1(met1), bottom routing layer for shielding=1(met1), bottom shield layer=1(met1) top shield layer=5(met5)
+[05/14 18:38:47     76s] #shield_bottom_stripe_layer=1(met1), shield_top_stripe_layer=5(met5)
+[05/14 18:38:47     76s] #pin_access_rlayer=2(met2) num_routing_layer=5 top_routing_layer=5 top_ripin_layer=5
+[05/14 18:38:47     76s] #shield_top_dpt_rlayer=-1 top_rlayer=5 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=1
+[05/14 18:38:47     76s] #enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+[05/14 18:38:47     76s] #Regenerating Ggrids automatically.
+[05/14 18:38:47     76s] #Auto generating G-grids with size=15 tracks, using layer met3's pitch = 0.6150.
+[05/14 18:38:47     76s] #Using automatically generated G-grids.
+[05/14 18:38:47     76s] #Done routing data preparation.
+[05/14 18:38:47     76s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2732.05 (MB), peak = 2732.05 (MB)
+[05/14 18:38:47     76s] #
+[05/14 18:38:47     76s] #Start tQuantus RC extraction...
+[05/14 18:38:47     76s] #Start building rc corner(s)...
+[05/14 18:38:47     76s] #Number of RC Corner = 1
+[05/14 18:38:47     76s] #Corner rccorners /home/iclab16/Desktop/viterbi_binh/qrc/qrcTechFile_RCgen 25.000000 (real) 
+[05/14 18:38:47     76s] #(i=5, n=5 1000)
+[05/14 18:38:47     76s] #metal1 -> met1 (1)
+[05/14 18:38:47     76s] #metal2 -> met2 (2)
+[05/14 18:38:47     76s] #metal3 -> met3 (3)
+[05/14 18:38:47     76s] #metal4 -> met4 (4)
+[05/14 18:38:47     76s] #metal5 -> met5 (5)
+[05/14 18:38:47     76s] #SADV-On
+[05/14 18:38:47     76s] # Corner(s) : 
+[05/14 18:38:47     76s] #rccorners [25.00]
+[05/14 18:38:48     76s] # Corner id: 0
+[05/14 18:38:48     76s] # Layout Scale: 1.000000
+[05/14 18:38:48     76s] # Has Metal Fill model: yes
+[05/14 18:38:48     76s] # Temperature was set
+[05/14 18:38:48     76s] # Temperature : 25.000000
+[05/14 18:38:48     76s] # Ref. Temp   : 25.000000
+[05/14 18:38:48     76s] #SADV-Off
+[05/14 18:38:48     76s] #
+[05/14 18:38:48     76s] #layer[5] tech width 1600 != ict width 800.0
+[05/14 18:38:48     76s] #
+[05/14 18:38:48     76s] #layer[5] tech spc 1600 != ict spc 800.0
+[05/14 18:38:48     76s] #total pattern=35 [5, 90]
+[05/14 18:38:48     76s] #Reading previously stored rc_model file ( /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/misc/rc_model.bin ) ...
+[05/14 18:38:48     76s] #found CAPMODEL /home/iclab16/Desktop/viterbi_binh/qrc/qrcTechFile_RCgen
+[05/14 18:38:48     76s] #found RESMODEL /home/iclab16/Desktop/viterbi_binh/qrc/qrcTechFile_RCgen 25.000000 
+[05/14 18:38:48     76s] #CCE Version read = IQuantus/TQuantus 23.1.1-s583
+[05/14 18:38:48     76s] #number model r/c [1,1] [5,90] read
+[05/14 18:38:48     76s] #0 rcmodel(s) requires rebuild
+[05/14 18:38:48     76s] #Build RC corners: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2738.18 (MB), peak = 2741.73 (MB)
+[05/14 18:38:48     76s] #Finish check_net_pin_list step Enter extract
+[05/14 18:38:48     76s] #Start init net ripin tree building
+[05/14 18:38:48     76s] #Finish init net ripin tree building
+[05/14 18:38:48     76s] #Cpu time = 00:00:00
+[05/14 18:38:48     76s] #Elapsed time = 00:00:00
+[05/14 18:38:48     76s] #Increased memory = 0.00 (MB)
+[05/14 18:38:48     76s] #Total memory = 2738.18 (MB)
+[05/14 18:38:48     76s] #Peak memory = 2741.73 (MB)
+[05/14 18:38:48     76s] #begin processing metal fill model file
+[05/14 18:38:48     76s] #end processing metal fill model file
+[05/14 18:38:48     76s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:48     76s] #Length limit = 200 pitches
+[05/14 18:38:48     76s] #opt mode = 2
+[05/14 18:38:48     76s] #Finish check_net_pin_list step Fix net pin list
+[05/14 18:38:48     76s] #Start generate extraction boxes.
+[05/14 18:38:48     76s] #
+[05/14 18:38:48     76s] #Extract using 30 x 30 Hboxes
+[05/14 18:38:48     76s] #2x2 initial hboxes
+[05/14 18:38:48     76s] #Use area based hbox pruning.
+[05/14 18:38:48     76s] #0/0 hboxes pruned.
+[05/14 18:38:48     76s] #Complete generating extraction boxes.
+[05/14 18:38:48     76s] #Start step Extraction
+[05/14 18:38:48     76s] #Extract 1 hboxes with single thread on machine with  Xeon 2.30GHz 40960KB Cache 32CPU...
+[05/14 18:38:48     76s] #Process 0 special clock nets for rc extraction
+[05/14 18:38:48     76s] #Total 923 nets were built. 2 nodes added to break long wires. 0 net(s) have incomplete routes.
+[05/14 18:38:48     76s] #Start inst blockage merging.
+[05/14 18:38:48     77s] #Run Statistics for Extraction:
+[05/14 18:38:48     77s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:38:48     77s] #   Increased memory =    25.28 (MB), total memory =  2763.53 (MB), peak memory =  2763.53 (MB)
+[05/14 18:38:48     77s] #Register nets and terms for rcdb /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d
+[05/14 18:38:48     77s] #Finish registering nets and terms for rcdb.
+[05/14 18:38:48     77s] #Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2762.73 (MB), peak = 2763.55 (MB)
+[05/14 18:38:48     77s] #WARNING (NRIF-95) Option set_db route_top_routing_layer has invalid value "0". Reset to max routing layer "5".
+[05/14 18:38:48     77s] #RC Statistics: 3923 Res, 1956 Ground Cap, 890 XCap (Edge to Edge)
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED84 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED51 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED46 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED68 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED67 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED54 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED61 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED64 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED63 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED56 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED58 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED60 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED76 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED79 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED83 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED80 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED72 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED0 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (NREX-102) Net UNCONNECTED74 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+[05/14 18:38:48     77s] #WARNING (EMS-27) Message (NREX-102) has exceeded the current message display limit of 20.
+[05/14 18:38:48     77s] #To increase the message display limit, refer to the product command reference manual.
+[05/14 18:38:48     77s] #RC V/H edge ratio: 0.19, Avg V/H Edge Length: 2590.08 (1732), Avg L-Edge Length: 10918.30 (1736)
+[05/14 18:38:48     77s] #Nets and terms are pre-registered for rcdb /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d.
+[05/14 18:38:48     77s] #Start writing RC data.
+[05/14 18:38:48     77s] #Finish writing RC data
+[05/14 18:38:48     77s] #Finish writing rcdb with 4886 nodes, 3963 edges, and 1930 xcaps
+[05/14 18:38:48     77s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2760.06 (MB), peak = 2763.77 (MB)
+[05/14 18:38:48     77s] Restoring parasitic data from file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d' ...
+[05/14 18:38:48     77s] Opening parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d' for reading (mem: 2982.348M)
+[05/14 18:38:48     77s] Reading RCDB with compressed RC data.
+[05/14 18:38:48     77s] Opening parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d' for content verification (mem: 2982.348M)
+[05/14 18:38:48     77s] Reading RCDB with compressed RC data.
+[05/14 18:38:48     77s] Closing parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d': 0 access done (mem: 2982.348M)
+[05/14 18:38:48     77s] Closing parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d': 0 access done (mem: 2982.348M)
+[05/14 18:38:48     77s] Begin read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 2982.348M)
+[05/14 18:38:48     77s] Following multi-corner parasitics specified:
+[05/14 18:38:48     77s] 	/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d (rcdb)
+[05/14 18:38:48     77s] Opening parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d' for reading (mem: 2982.348M)
+[05/14 18:38:48     77s] Reading RCDB with compressed RC data.
+[05/14 18:38:48     77s] 		Cell viterbi_top has rcdb /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d specified
+[05/14 18:38:48     77s] Cell viterbi_top, hinst 
+[05/14 18:38:48     77s] processing rcdb (/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d) for hinst (top) of cell (viterbi_top);
+[05/14 18:38:48     77s] Closing parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/nr2127708_tElc5p.rcdb.d': 0 access done (mem: 2982.348M)
+[05/14 18:38:48     77s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=2982.348M)
+[05/14 18:38:48     77s] Opening parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/viterbi_top_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_QEoONb.rcdb.d/viterbi_top.rcdb.d' for reading (mem: 2982.348M)
+[05/14 18:38:48     77s] Reading RCDB with compressed RC data.
+[05/14 18:38:48     77s] Lumped Parasitic Loading Completed (total cpu=0:00:00.0, real=0:00:00.0, current mem=2982.348M)
+[05/14 18:38:48     77s] Closing parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/viterbi_top_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_QEoONb.rcdb.d/viterbi_top.rcdb.d': 0 access done (mem: 2982.348M)
+[05/14 18:38:48     77s] Done read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 2982.348M)
+[05/14 18:38:48     77s] #
+[05/14 18:38:48     77s] #Restore RCDB.
+[05/14 18:38:48     77s] #
+[05/14 18:38:48     77s] #Complete tQuantus RC extraction.
+[05/14 18:38:48     77s] #Cpu time = 00:00:01
+[05/14 18:38:48     77s] #Elapsed time = 00:00:01
+[05/14 18:38:48     77s] #Increased memory = 29.48 (MB)
+[05/14 18:38:48     77s] #Total memory = 2761.53 (MB)
+[05/14 18:38:48     77s] #Peak memory = 2782.51 (MB)
+[05/14 18:38:48     77s] #
+[05/14 18:38:48     77s] #2 inserted nodes are removed
+[05/14 18:38:48     77s] #Restored 0 tie nets, 0 tie snets, 0 partial nets
+[05/14 18:38:48     77s] ### export design design signature (4): route=1134693832 fixed_route=1134693832 flt_obj=0 vio=1905142130 swire=282492057 shield_wire=1 net_attr=1233298990 dirty_area=0 del_dirty_area=0 cell=1749981709 placement=1427296102 pin_access=1 inst_pattern=1 inst_orient=1 via=1069576481 routing_via=1428595675 timing=1872938290 sns=1872938290 ppa_info=1923552800
+[05/14 18:38:48     77s] #Start Design Signature (0)
+[05/14 18:38:48     77s] #Finish Inst Signature in MT(65719747)
+[05/14 18:38:48     77s] #Finish Net Signature in MT(71346475)
+[05/14 18:38:48     77s] #Finish SNet Signature in MT (99106936)
+[05/14 18:38:48     77s] #Run time and memory report for RC extraction:
+[05/14 18:38:48     77s] #RC extraction running on  Xeon 2.30GHz 40960KB Cache 32CPU.
+[05/14 18:38:48     77s] #Run Statistics for snet signature:
+[05/14 18:38:48     77s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:38:48     77s] #   Increased memory =     0.00 (MB), total memory =  2759.43 (MB), peak memory =  2782.51 (MB)
+[05/14 18:38:48     77s] #Run Statistics for Net Final Signature:
+[05/14 18:38:48     77s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:38:48     77s] #   Increased memory =     0.00 (MB), total memory =  2759.43 (MB), peak memory =  2782.51 (MB)
+[05/14 18:38:48     77s] #Run Statistics for Net launch:
+[05/14 18:38:48     77s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:38:48     77s] #   Increased memory =     0.00 (MB), total memory =  2759.43 (MB), peak memory =  2782.51 (MB)
+[05/14 18:38:48     77s] #Run Statistics for Net init_dbsNet_slist:
+[05/14 18:38:48     77s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:38:48     77s] #   Increased memory =     0.00 (MB), total memory =  2759.43 (MB), peak memory =  2782.51 (MB)
+[05/14 18:38:48     77s] #Run Statistics for net signature:
+[05/14 18:38:48     77s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:38:48     77s] #   Increased memory =     0.00 (MB), total memory =  2759.43 (MB), peak memory =  2782.51 (MB)
+[05/14 18:38:48     77s] #Run Statistics for inst signature:
+[05/14 18:38:48     77s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:38:48     77s] #   Increased memory =    -0.79 (MB), total memory =  2759.43 (MB), peak memory =  2782.51 (MB)
+[05/14 18:38:48     77s] Starting delay calculation for Setup views
+[05/14 18:38:49     77s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[05/14 18:38:49     77s] AAE_INFO: resetNetProps viewIdx 0 
+[05/14 18:38:49     77s] Starting SI iteration 1 using Infinite Timing Windows
+[05/14 18:38:49     77s] #################################################################################
+[05/14 18:38:49     77s] # Design Stage: PostRoute
+[05/14 18:38:49     77s] # Design Name: viterbi_top
+[05/14 18:38:49     77s] # Design Mode: 90nm
+[05/14 18:38:49     77s] # Analysis Mode: MMMC OCV 
+[05/14 18:38:49     77s] # Parasitics Mode: SPEF/RCDB 
+[05/14 18:38:49     77s] # Signoff Settings: SI On 
+[05/14 18:38:49     77s] #################################################################################
+[05/14 18:38:49     77s] Setting infinite Tws ...
+[05/14 18:38:49     77s] AAE_INFO: 1 threads acquired from CTE.
+[05/14 18:38:49     77s] First Iteration Infinite Tw... 
+[05/14 18:38:49     77s] Calculate early delays in OCV mode...
+[05/14 18:38:49     77s] Calculate late delays in OCV mode...
+[05/14 18:38:49     77s] Topological Sorting (REAL = 0:00:00.0, MEM = 3166.6M, InitMEM = 3164.6M)
+[05/14 18:38:49     77s] Start delay calculation (fullDC) (1 T). (MEM=2900.94)
+[05/14 18:38:49     77s] Start AAE Lib Loading. (MEM=2901.390625)
+[05/14 18:38:49     77s] End AAE Lib Loading. (MEM=2907.453125 CPU=0:00:00.0 Real=0:00:00.0)
+[05/14 18:38:49     77s] End AAE Lib Interpolated Model. (MEM=2907.453125 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 18:38:49     78s] Opening parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/viterbi_top_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_QEoONb.rcdb.d/viterbi_top.rcdb.d' for reading (mem: 3425.281M)
+[05/14 18:38:49     78s] Reading RCDB with compressed RC data.
+[05/14 18:38:49     78s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3433.3M)
+[05/14 18:38:50     78s] Total number of fetched objects 1011
+[05/14 18:38:50     78s] AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+[05/14 18:38:50     78s] AAE_INFO-618: Total number of nets in the design is 1041,  99.1 percent of the nets selected for SI analysis
+[05/14 18:38:50     78s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 18:38:50     78s] End delay calculation. (MEM=2923.25 CPU=0:00:00.5 REAL=0:00:01.0)
+[05/14 18:38:50     78s] End delay calculation (fullDC). (MEM=2911.04 CPU=0:00:00.8 REAL=0:00:01.0)
+[05/14 18:38:50     78s] Save waveform /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/.AAE_IR2soP/.AAE_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292/waveform.data...
+[05/14 18:38:50     78s] *** CDM Built up (cpu=0:00:01.1  real=0:00:01.0  mem= 3571.0M) ***
+[05/14 18:38:50     78s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2918.7M)
+[05/14 18:38:50     78s] Add other clocks and setupCteToAAEClockMapping during iter 1
+[05/14 18:38:50     78s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2918.7M)
+[05/14 18:38:50     78s] Starting SI iteration 2
+[05/14 18:38:50     79s] Calculate early delays in OCV mode...
+[05/14 18:38:50     79s] Calculate late delays in OCV mode...
+[05/14 18:38:50     79s] Start delay calculation (fullDC) (1 T). (MEM=2928.39)
+[05/14 18:38:50     79s] End AAE Lib Interpolated Model. (MEM=2928.386719 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 18:38:50     79s] Glitch Analysis: View wc -- Total Number of Nets Skipped = 24. 
+[05/14 18:38:50     79s] Glitch Analysis: View wc -- Total Number of Nets Analyzed = 1011. 
+[05/14 18:38:50     79s] Total number of fetched objects 1011
+[05/14 18:38:50     79s] AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+[05/14 18:38:50     79s] AAE_INFO-618: Total number of nets in the design is 1041,  0.5 percent of the nets selected for SI analysis
+[05/14 18:38:50     79s] End delay calculation. (MEM=2931.12 CPU=0:00:00.0 REAL=0:00:00.0)
+[05/14 18:38:50     79s] End delay calculation (fullDC). (MEM=2931.12 CPU=0:00:00.0 REAL=0:00:00.0)
+[05/14 18:38:50     79s] *** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 3526.2M) ***
+[05/14 18:38:50     79s] *** Done Building Timing Graph (cpu=0:00:01.9 real=0:00:02.0 totSessionCpu=0:01:20 mem=3526.2M)
+[05/14 18:38:50     79s] Effort level <high> specified for reg2reg path_group
+[05/14 18:38:51     79s] Cell viterbi_top LLGs are deleted
+[05/14 18:38:51     79s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:38:51     79s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:38:51     79s] OPERPROF: Starting SiteArray-Init at level 1, MEM:3526.2M, EPOCH TIME: 1778758731.003510
+[05/14 18:38:51     79s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:38:51     79s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:38:51     79s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:3526.2M, EPOCH TIME: 1778758731.003776
+[05/14 18:38:51     79s] Max number of tech site patterns supported in site array is 256.
+[05/14 18:38:51     79s] Core basic site is CoreSite
+[05/14 18:38:51     79s] DP-Init: Signature of floorplan is 44c8dafc822e9770. Signature of routing blockage is 2ecceeb1cc4fcbea.
+[05/14 18:38:51     79s] After signature check, allow fast init is false, keep pre-filter is false.
+[05/14 18:38:51     79s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[05/14 18:38:51     79s] Use non-trimmed site array because memory saving is not enough.
+[05/14 18:38:51     79s] SiteArray: non-trimmed site array dimensions = 30 x 287
+[05/14 18:38:51     79s] SiteArray: use 77,824 bytes
+[05/14 18:38:51     79s] SiteArray: current memory after site array memory allocation 3526.2M
+[05/14 18:38:51     79s] SiteArray: FP blocked sites are writable
+[05/14 18:38:51     79s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x4c186500): Create thread pool 0x7fb0662483e0.
+[05/14 18:38:51     79s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x4c186500): 0 out of 1 thread pools are available.
+[05/14 18:38:51     79s] OPERPROF:     Starting Routing-Blockage-From-Wire-Via-StBox at level 3, MEM:3654.2M, EPOCH TIME: 1778758731.010741
+[05/14 18:38:51     79s] Process 390 (called=56 computed=10) wires and vias for routing blockage analysis
+[05/14 18:38:51     79s] OPERPROF:     Finished Routing-Blockage-From-Wire-Via-StBox at level 3, CPU:0.000, REAL:0.000, MEM:3654.2M, EPOCH TIME: 1778758731.011004
+[05/14 18:38:51     79s] SiteArray: number of non floorplan blocked sites for llg default is 8610
+[05/14 18:38:51     79s] Atter site array init, number of instance map data is 0.
+[05/14 18:38:51     79s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.008, REAL:0.008, MEM:3654.2M, EPOCH TIME: 1778758731.011436
+[05/14 18:38:51     79s] 
+[05/14 18:38:51     79s] Scanning PG Shapes for Pre-Colorizing...Done.
+[05/14 18:38:51     79s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[05/14 18:38:51     79s]  Pre_CCE_Colorizing is not ON! (0:0:124:0)
+[05/14 18:38:51     79s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.009, REAL:0.009, MEM:3654.2M, EPOCH TIME: 1778758731.012393
+[05/14 18:38:51     79s] Cell viterbi_top LLGs are deleted
+[05/14 18:38:51     79s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:5).
+[05/14 18:38:51     79s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:38:51     79s] ** INFO: Initializing Glitch Interface
+[05/14 18:38:51     79s] ** INFO: Initializing Glitch Interface
+[05/14 18:38:52     79s] 
+[05/14 18:38:52     79s] OptSummary:
+[05/14 18:38:52     79s] 
+[05/14 18:38:52     79s] ------------------------------------------------------------------
+[05/14 18:38:52     79s]          time_design Summary
+[05/14 18:38:52     79s] ------------------------------------------------------------------
+[05/14 18:38:52     79s] 
+[05/14 18:38:52     79s] Setup views included:
+[05/14 18:38:52     79s]  wc 
+[05/14 18:38:52     79s] 
+[05/14 18:38:52     79s] +--------------------+---------+---------+---------+
+[05/14 18:38:52     79s] |     Setup mode     |   all   | reg2reg | default |
+[05/14 18:38:52     79s] +--------------------+---------+---------+---------+
+[05/14 18:38:52     79s] |           WNS (ns):|  0.268  |  0.268  |  1.837  |
+[05/14 18:38:52     79s] |           TNS (ns):|  0.000  |  0.000  |  0.000  |
+[05/14 18:38:52     79s] |    Violating Paths:|    0    |    0    |    0    |
+[05/14 18:38:52     79s] |          All Paths:|   217   |   123   |   114   |
+[05/14 18:38:52     79s] +--------------------+---------+---------+---------+
+[05/14 18:38:52     79s] 
+[05/14 18:38:52     79s] +----------------+-------------------------------+------------------+
+[05/14 18:38:52     79s] |                |              Real             |       Total      |
+[05/14 18:38:52     79s] |    DRVs        +------------------+------------+------------------|
+[05/14 18:38:52     79s] |                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
+[05/14 18:38:52     79s] +----------------+------------------+------------+------------------+
+[05/14 18:38:52     79s] |   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+[05/14 18:38:52     79s] |   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+[05/14 18:38:52     79s] |   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+[05/14 18:38:52     79s] |   max_length   |      0 (0)       |     0      |      0 (0)       |
+[05/14 18:38:52     79s] +----------------+------------------+------------+------------------+
+[05/14 18:38:52     79s] 
+[05/14 18:38:52     79s] Density: 79.756%
+[05/14 18:38:52     79s] 
+[05/14 18:38:52     79s]        (100.000% with Fillers)
+[05/14 18:38:52     79s] ------------------------------------------------------------------
+[05/14 18:38:52     79s] Reported timing to dir ./timingReports
+[05/14 18:38:52     79s] Total CPU time: 3.34 sec
+[05/14 18:38:52     79s] Total Real time: 5.0 sec
+[05/14 18:38:52     79s] Total Memory Usage: 3782.402344 Mbytes
+[05/14 18:38:52     79s] Reset AAE Options
+[05/14 18:38:52     79s] Info: pop threads available for lower-level modules during optimization.
+[05/14 18:38:52     79s] *** time_design #1 [finish] () : cpu/real = 0:00:03.3/0:00:04.6 (0.7), totSession cpu/real = 0:01:20.7/0:02:26.2 (0.6), mem = 3782.4M
+[05/14 18:38:52     79s] 
+[05/14 18:38:52     79s] =============================================================================================
+[05/14 18:38:52     79s]  Final TAT Report : time_design #1                                              23.37-s090_1
+[05/14 18:38:52     79s] =============================================================================================
+[05/14 18:38:52     79s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[05/14 18:38:52     79s] ---------------------------------------------------------------------------------------------
+[05/14 18:38:52     79s] [ ViewPruning            ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[05/14 18:38:52     79s] [ OptSummaryReport       ]      1   0:00:00.0  (   0.4 % )     0:00:01.0 /  0:00:00.3    0.3
+[05/14 18:38:52     79s] [ DrvReport              ]      1   0:00:00.8  (  17.7 % )     0:00:00.8 /  0:00:00.1    0.1
+[05/14 18:38:52     79s] [ ExtractRC              ]      1   0:00:01.4  (  31.1 % )     0:00:01.4 /  0:00:01.1    0.7
+[05/14 18:38:52     79s] [ UpdateTimingGraph      ]      2   0:00:00.7  (  15.1 % )     0:00:02.0 /  0:00:01.9    1.0
+[05/14 18:38:52     79s] [ FullDelayCalc          ]      2   0:00:01.3  (  27.4 % )     0:00:01.3 /  0:00:01.1    0.9
+[05/14 18:38:52     79s] [ TimingUpdate           ]      2   0:00:00.0  (   1.0 % )     0:00:00.0 /  0:00:00.0    1.1
+[05/14 18:38:52     79s] [ TimingReport           ]      1   0:00:00.0  (   0.8 % )     0:00:00.0 /  0:00:00.0    0.8
+[05/14 18:38:52     79s] [ GenerateReports        ]      1   0:00:00.2  (   3.4 % )     0:00:00.2 /  0:00:00.1    1.0
+[05/14 18:38:52     79s] [ MISC                   ]          0:00:00.1  (   3.0 % )     0:00:00.1 /  0:00:00.1    0.8
+[05/14 18:38:52     79s] ---------------------------------------------------------------------------------------------
+[05/14 18:38:52     79s]  time_design #1 TOTAL               0:00:04.6  ( 100.0 % )     0:00:04.6 /  0:00:03.3    0.7
+[05/14 18:38:52     79s] ---------------------------------------------------------------------------------------------
+[05/14 18:38:52     79s] 0
+[05/14 18:38:52     79s] @innovus 3> time_design -post_route -hold
+*** time_design #2 [begin] () : totSession cpu/real = 0:01:21.3/0:02:36.3 (0.5), mem = 3782.4M
+[05/14 18:39:02     80s] Info: 1 threads available for lower-level modules during optimization.
+[05/14 18:39:02     80s]  Reset EOS DB
+[05/14 18:39:02     80s] Ignoring AAE DB Resetting ...
+[05/14 18:39:02     80s] Closing parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/viterbi_top_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_QEoONb.rcdb.d/viterbi_top.rcdb.d': 923 access done (mem: 3782.402M)
+[05/14 18:39:02     80s] tQuantus: Use design signature to decide re-extraction is ON
+[05/14 18:39:02     80s] #Start Design Signature (0)
+[05/14 18:39:02     80s] #Finish Inst Signature in MT(65719747)
+[05/14 18:39:02     80s] #Finish Net Signature in MT(71346475)
+[05/14 18:39:02     80s] #Finish SNet Signature in MT (99106936)
+[05/14 18:39:02     80s] #Run time and memory report for RC extraction:
+[05/14 18:39:02     80s] #RC extraction running on  Xeon 2.30GHz 40960KB Cache 32CPU.
+[05/14 18:39:02     80s] #Run Statistics for snet signature:
+[05/14 18:39:02     80s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:39:02     80s] #   Increased memory =     0.00 (MB), total memory =  2961.50 (MB), peak memory =  2962.42 (MB)
+[05/14 18:39:02     80s] #Run Statistics for Net Final Signature:
+[05/14 18:39:02     80s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:39:02     80s] #   Increased memory =     0.00 (MB), total memory =  2961.50 (MB), peak memory =  2962.42 (MB)
+[05/14 18:39:02     80s] #Run Statistics for Net launch:
+[05/14 18:39:02     80s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:39:02     80s] #   Increased memory =     0.00 (MB), total memory =  2961.50 (MB), peak memory =  2962.42 (MB)
+[05/14 18:39:02     80s] #Run Statistics for Net init_dbsNet_slist:
+[05/14 18:39:02     80s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:39:02     80s] #   Increased memory =     0.00 (MB), total memory =  2961.50 (MB), peak memory =  2962.42 (MB)
+[05/14 18:39:02     80s] #Run Statistics for net signature:
+[05/14 18:39:02     80s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:39:02     80s] #   Increased memory =     0.00 (MB), total memory =  2961.50 (MB), peak memory =  2962.42 (MB)
+[05/14 18:39:02     80s] #Run Statistics for inst signature:
+[05/14 18:39:02     80s] #   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+[05/14 18:39:02     80s] #   Increased memory =    -0.39 (MB), total memory =  2961.50 (MB), peak memory =  2962.42 (MB)
+[05/14 18:39:02     80s] tQuantus: Original signature = 99106936, new signature = 99106936
+[05/14 18:39:02     80s] tQuantus: Design is clean by design signature
+[05/14 18:39:02     80s] Opening parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/viterbi_top_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_QEoONb.rcdb.d/viterbi_top.rcdb.d' for reading (mem: 3782.402M)
+[05/14 18:39:02     80s] Closing parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/viterbi_top_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_QEoONb.rcdb.d/viterbi_top.rcdb.d': 0 access done (mem: 3782.402M)
+[05/14 18:39:02     80s] The design is extracted. Skipping TQuantus.
+[05/14 18:39:02     80s] Effort level <high> specified for reg2reg path_group
+[05/14 18:39:02     80s] Cell viterbi_top LLGs are deleted
+[05/14 18:39:02     80s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:39:02     80s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:39:02     80s] OPERPROF: Starting SiteArray-Init at level 1, MEM:3764.4M, EPOCH TIME: 1778758742.364014
+[05/14 18:39:02     80s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:39:02     80s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:39:02     80s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:3764.4M, EPOCH TIME: 1778758742.364218
+[05/14 18:39:02     80s] Max number of tech site patterns supported in site array is 256.
+[05/14 18:39:02     80s] Core basic site is CoreSite
+[05/14 18:39:02     80s] After signature check, allow fast init is true, keep pre-filter is true.
+[05/14 18:39:02     80s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[05/14 18:39:02     80s] Fast DP-INIT is on for default
+[05/14 18:39:02     80s] Atter site array init, number of instance map data is 0.
+[05/14 18:39:02     80s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.003, REAL:0.003, MEM:3764.4M, EPOCH TIME: 1778758742.367435
+[05/14 18:39:02     80s] 
+[05/14 18:39:02     80s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[05/14 18:39:02     80s]  Pre_CCE_Colorizing is not ON! (0:0:124:0)
+[05/14 18:39:02     80s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.005, REAL:0.005, MEM:3764.4M, EPOCH TIME: 1778758742.368641
+[05/14 18:39:02     80s] Cell viterbi_top LLGs are deleted
+[05/14 18:39:02     80s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:5).
+[05/14 18:39:02     80s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/14 18:39:02     80s] Starting delay calculation for Hold views
+[05/14 18:39:02     80s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[05/14 18:39:02     80s] AAE_INFO: resetNetProps viewIdx 1 
+[05/14 18:39:02     80s] Starting SI iteration 1 using Infinite Timing Windows
+[05/14 18:39:02     80s] #################################################################################
+[05/14 18:39:02     80s] # Design Stage: PostRoute
+[05/14 18:39:02     80s] # Design Name: viterbi_top
+[05/14 18:39:02     80s] # Design Mode: 90nm
+[05/14 18:39:02     80s] # Analysis Mode: MMMC OCV 
+[05/14 18:39:02     80s] # Parasitics Mode: SPEF/RCDB 
+[05/14 18:39:02     80s] # Signoff Settings: SI On 
+[05/14 18:39:02     80s] #################################################################################
+[05/14 18:39:02     80s] Setting infinite Tws ...
+[05/14 18:39:02     80s] AAE_INFO: 1 threads acquired from CTE.
+[05/14 18:39:02     80s] First Iteration Infinite Tw... 
+[05/14 18:39:02     80s] Calculate late delays in OCV mode...
+[05/14 18:39:02     80s] Calculate early delays in OCV mode...
+[05/14 18:39:02     80s] Topological Sorting (REAL = 0:00:00.0, MEM = 3774.3M, InitMEM = 3774.3M)
+[05/14 18:39:02     80s] Start delay calculation (fullDC) (1 T). (MEM=2953.56)
+[05/14 18:39:02     80s] *** Calculating scaling factor for min_timing libraries using the default operating condition of each library.
+[05/14 18:39:02     80s] End AAE Lib Interpolated Model. (MEM=2953.636719 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 18:39:02     80s] Opening parasitic data file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/viterbi_top_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_QEoONb.rcdb.d/viterbi_top.rcdb.d' for reading (mem: 3774.285M)
+[05/14 18:39:02     80s] Reading RCDB with compressed RC data.
+[05/14 18:39:02     80s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3790.3M)
+[05/14 18:39:03     81s] Total number of fetched objects 1011
+[05/14 18:39:03     81s] AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+[05/14 18:39:03     81s] AAE_INFO-618: Total number of nets in the design is 1041,  99.1 percent of the nets selected for SI analysis
+[05/14 18:39:03     81s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 18:39:03     81s] End delay calculation. (MEM=2960.57 CPU=0:00:00.5 REAL=0:00:01.0)
+[05/14 18:39:03     81s] End delay calculation (fullDC). (MEM=2960.57 CPU=0:00:00.6 REAL=0:00:01.0)
+[05/14 18:39:03     81s] Save waveform /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292_iclab_iclab16_NJabpv/.AAE_IR2soP/.AAE_2127708_b1e9508d-eab7-46fd-aeb5-cce35633b292/waveform.data...
+[05/14 18:39:03     81s] *** CDM Built up (cpu=0:00:00.6  real=0:00:01.0  mem= 3758.3M) ***
+[05/14 18:39:03     81s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2960.5M)
+[05/14 18:39:03     81s] Add other clocks and setupCteToAAEClockMapping during iter 1
+[05/14 18:39:03     81s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2960.5M)
+[05/14 18:39:03     81s] Starting SI iteration 2
+[05/14 18:39:03     81s] Calculate late delays in OCV mode...
+[05/14 18:39:03     81s] Calculate early delays in OCV mode...
+[05/14 18:39:03     81s] Start delay calculation (fullDC) (1 T). (MEM=2966.5)
+[05/14 18:39:03     81s] End AAE Lib Interpolated Model. (MEM=2966.496094 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 18:39:03     81s] Glitch Analysis: View bc -- Total Number of Nets Skipped = 24. 
+[05/14 18:39:03     81s] Glitch Analysis: View bc -- Total Number of Nets Analyzed = 1011. 
+[05/14 18:39:03     81s] Total number of fetched objects 1011
+[05/14 18:39:03     81s] AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+[05/14 18:39:03     81s] AAE_INFO-618: Total number of nets in the design is 1041,  0.0 percent of the nets selected for SI analysis
+[05/14 18:39:03     81s] End delay calculation. (MEM=2967.24 CPU=0:00:00.0 REAL=0:00:00.0)
+[05/14 18:39:03     81s] End delay calculation (fullDC). (MEM=2967.24 CPU=0:00:00.0 REAL=0:00:00.0)
+[05/14 18:39:03     81s] *** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 3702.4M) ***
+[05/14 18:39:03     81s] *** Done Building Timing Graph (cpu=0:00:01.4 real=0:00:01.0 totSessionCpu=0:01:23 mem=3702.4M)
+[05/14 18:39:04     82s] 
+[05/14 18:39:04     82s] OptSummary:
+[05/14 18:39:04     82s] 
+[05/14 18:39:04     82s] ------------------------------------------------------------------
+[05/14 18:39:04     82s]          time_design Summary
+[05/14 18:39:04     82s] ------------------------------------------------------------------
+[05/14 18:39:04     82s] 
+[05/14 18:39:04     82s] Hold views included:
+[05/14 18:39:04     82s]  bc 
+[05/14 18:39:04     82s] 
+[05/14 18:39:04     82s] +--------------------+---------+---------+---------+
+[05/14 18:39:04     82s] |     Hold mode      |   all   | reg2reg | default |
+[05/14 18:39:04     82s] +--------------------+---------+---------+---------+
+[05/14 18:39:04     82s] |           WNS (ns):|  0.082  |  0.082  |  0.479  |
+[05/14 18:39:04     82s] |           TNS (ns):|  0.000  |  0.000  |  0.000  |
+[05/14 18:39:04     82s] |    Violating Paths:|    0    |    0    |    0    |
+[05/14 18:39:04     82s] |          All Paths:|   217   |   123   |   114   |
+[05/14 18:39:04     82s] +--------------------+---------+---------+---------+
+[05/14 18:39:04     82s] 
+[05/14 18:39:04     82s] 
+[05/14 18:39:04     82s] Density: 79.756%
+[05/14 18:39:04     82s]        (100.000% with Fillers)
+[05/14 18:39:04     82s] ------------------------------------------------------------------
+[05/14 18:39:04     82s] Reported timing to dir ./timingReports
+[05/14 18:39:04     82s] Total CPU time: 1.92 sec
+[05/14 18:39:04     82s] Total Real time: 2.0 sec
+[05/14 18:39:04     82s] Total Memory Usage: 3684.425781 Mbytes
+[05/14 18:39:04     82s] Reset AAE Options
+[05/14 18:39:04     82s] Info: pop threads available for lower-level modules during optimization.
+[05/14 18:39:04     82s] *** time_design #2 [finish] () : cpu/real = 0:00:01.9/0:00:02.0 (0.9), totSession cpu/real = 0:01:23.2/0:02:38.4 (0.5), mem = 3684.4M
+[05/14 18:39:04     82s] 
+[05/14 18:39:04     82s] =============================================================================================
+[05/14 18:39:04     82s]  Final TAT Report : time_design #2                                              23.37-s090_1
+[05/14 18:39:04     82s] =============================================================================================
+[05/14 18:39:04     82s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[05/14 18:39:04     82s] ---------------------------------------------------------------------------------------------
+[05/14 18:39:04     82s] [ ViewPruning            ]      2   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[05/14 18:39:04     82s] [ OptSummaryReport       ]      1   0:00:00.0  (   0.7 % )     0:00:01.7 /  0:00:01.6    0.9
+[05/14 18:39:04     82s] [ ExtractRC              ]      1   0:00:00.0  (   1.3 % )     0:00:00.0 /  0:00:00.0    0.8
+[05/14 18:39:04     82s] [ UpdateTimingGraph      ]      1   0:00:00.8  (  37.1 % )     0:00:01.4 /  0:00:01.4    1.0
+[05/14 18:39:04     82s] [ FullDelayCalc          ]      2   0:00:00.7  (  32.4 % )     0:00:00.7 /  0:00:00.6    1.0
+[05/14 18:39:04     82s] [ TimingUpdate           ]      1   0:00:00.0  (   1.2 % )     0:00:00.0 /  0:00:00.0    1.2
+[05/14 18:39:04     82s] [ TimingReport           ]      1   0:00:00.0  (   2.0 % )     0:00:00.0 /  0:00:00.0    1.0
+[05/14 18:39:04     82s] [ GenerateReports        ]      1   0:00:00.2  (   9.3 % )     0:00:00.2 /  0:00:00.1    0.6
+[05/14 18:39:04     82s] [ MISC                   ]          0:00:00.3  (  16.0 % )     0:00:00.3 /  0:00:00.3    1.0
+[05/14 18:39:04     82s] ---------------------------------------------------------------------------------------------
+[05/14 18:39:04     82s]  time_design #2 TOTAL               0:00:02.0  ( 100.0 % )     0:00:02.0 /  0:00:01.9    0.9
+[05/14 18:39:04     82s] ---------------------------------------------------------------------------------------------
+[05/14 18:39:04     82s] 0
+[05/14 18:39:04     82s] @innovus 4> exit
+[05/14 18:40:01     85s] 
+[05/14 18:40:01     85s] *** Summary of all messages that are not suppressed in this session:
+[05/14 18:40:01     85s] Severity  ID               Count  Summary                                  
+[05/14 18:40:01     85s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/14 18:40:01     85s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/14 18:40:01     85s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[05/14 18:40:01     85s] WARNING   IMPSP-362            1  Site '%s' has %s std.Cell height, so ign...
+[05/14 18:40:01     85s] WARNING   NRDB-2040            1  Rule %s doesn't specify any vias that sa...
+[05/14 18:40:01     85s] WARNING   NREX-102           118  Net %s is not extracted due to %s. The r...
+[05/14 18:40:01     85s] WARNING   NRIF-95              9  Option set_db route_top_routing_layer ha...
+*** Message Summary: 135 warning(s), 0 error(s)
+[05/14 18:40:01     85s] 
+[05/14 18:40:01     85s] 
+[05/14 18:40:01     85s] *** Memory Usage v#1 (Current mem = 3684.426M, initial mem = 866.945M) ***
+[05/14 18:40:01     85s] --- Ending "Innovus" (totcpu=0:01:27, real=0:03:37, mem=3684.4M) ---

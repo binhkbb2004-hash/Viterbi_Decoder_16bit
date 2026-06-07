@@ -1,0 +1,547 @@
+[05/15 21:41:07      0s] 
+[05/15 21:41:07      0s] Cadence Innovus(TM) Implementation System.
+[05/15 21:41:07      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/15 21:41:07      0s] 
+[05/15 21:41:07      0s] Version:	v23.37-s090_1, built Mon Feb 9 16:09:58 PST 2026
+[05/15 21:41:07      0s] Options:	-stylus 
+[05/15 21:41:07      0s] Date:		Fri May 15 21:41:07 2026
+[05/15 21:41:07      0s] Host:		iclab (x86_64 w/Linux 4.18.0-553.111.1.el8_10.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz 40960KB)
+[05/15 21:41:07      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[05/15 21:41:07      0s] 
+[05/15 21:41:07      0s] License:
+[05/15 21:41:07      0s] 		[21:41:07.483705] Configured Lic search path (23.02-s006): /home/cadence/license/license.dat
+[05/15 21:41:07      0s] 
+[05/15 21:41:07      0s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[05/15 21:41:07      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[05/15 21:41:28     41s] Memory management switch to non-aggressive memory release mode.
+[05/15 21:41:28     41s] 
+[05/15 21:41:28     41s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[05/15 21:41:28     41s] 
+[05/15 21:41:28     42s] 
+[05/15 21:41:28     42s] 
+[05/15 21:41:31     48s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.37-s090_1 (64bit) 02/09/2026 16:09 (Linux 3.10.0-693.el7.x86_64)
+[05/15 21:41:35     53s] @(#)CDS: NanoRoute 23.37-s090_1 NR260126-2134/23_17-UB (database version 18.20.682_1) {superthreading v2.20}
+[05/15 21:41:35     53s] @(#)CDS: AAE 23.17-s025 (64bit) 02/09/2026 (Linux 3.10.0-693.el7.x86_64)
+[05/15 21:41:35     53s] @(#)CDS: CTE 23.17-s038_1 () Feb  4 2026 22:23:13 ( )
+[05/15 21:41:35     53s] @(#)CDS: SYNTECH 23.17-s006_1 () Jan 20 2026 01:15:57 ( )
+[05/15 21:41:35     53s] @(#)CDS: CPE v23.17-s060
+[05/15 21:41:35     53s] @(#)CDS: IQuantus/TQuantus 23.1.1-s583 (64bit) Mon Nov 24 21:09:39 PST 2025 (Linux 3.10.0-693.el7.x86_64)
+[05/15 21:41:35     53s] @(#)CDS: OA 22.61-p027 Wed May 14 22:25:16 2025
+[05/15 21:41:35     53s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[05/15 21:41:35     53s] @(#)CDS: RCDB 11.15.0
+[05/15 21:41:35     53s] @(#)CDS: STYLUS 23.16-s001_1 (07/11/2025 08:51 PDT)
+[05/15 21:41:35     53s] @(#)CDS: IntegrityPlanner-23.17-17130 (23.17) (2025-12-03 09:08:16+0800)
+[05/15 21:41:35     53s] @(#)CDS: SYNTHESIS_ENGINE 23.17-s085
+[05/15 21:41:35     53s] Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_3468356_20176b77-f00f-4882-a388-1953b1828265_iclab_iclab16_fRX6bc.
+
+[05/15 21:41:35     53s] Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_3468356_20176b77-f00f-4882-a388-1953b1828265_iclab_iclab16_fRX6bc.
+[05/15 21:41:35     53s] 
+[05/15 21:41:35     53s] Change the soft stacksize limit to 0.2%RAM (256 mbytes). Set global soft_stack_size_limit to change the value.
+[05/15 21:41:38     56s] Info: Process UID = 3468356 / 20176b77-f00f-4882-a388-1953b1828265 / sDnXI84SrD
+[05/15 21:41:38     56s] 
+[05/15 21:41:38     56s] **INFO:  MMMC transition support version v31-84 
+[05/15 21:41:38     56s] 
+[05/15 21:41:43     61s] @innovus 1> read_db postRouteOpt
+[05/15 21:42:12     64s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+#% Begin load design ... (date=05/15 21:42:12, mem=1907.7M)
+[05/15 21:42:14     65s] AAE_INFO: switching set_db delaycal_enable_si from false to true ...
+[05/15 21:42:14     65s] AAE_INFO: The setting is changed from false to true in set_db delaycal_enable_si
+[05/15 21:42:14     65s] Loading design 'viterbi_top' saved by 'Innovus' '23.37-s090_1' on 'Thu May 14 18:09:17 2026'.
+[05/15 21:42:14     66s] Reading max_timing timing library '/home/iclab16/Desktop/viterbi_binh/lib/sky130_ss_1.62_125_nldm.lib' ...
+[05/15 21:42:14     66s] Read 112 cells in library 'sky130_ss_1.62_125' 
+[05/15 21:42:14     66s] Reading min_timing timing library '/home/iclab16/Desktop/viterbi_binh/lib/sky130_ff_1.98_0_nldm.lib' ...
+[05/15 21:42:15     66s] Read 112 cells in library 'sky130_ff_1.98_0' 
+[05/15 21:42:15     67s] Ending "PreSetAnalysisView" (total cpu=0:00:01.0, real=0:00:01.0, peak res=1988.5M, current mem=1922.6M)
+[05/15 21:42:15     67s] 
+[05/15 21:42:15     67s] Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T.tlef ...
+[05/15 21:42:15     67s] 
+[05/15 21:42:15     67s] Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T.lef ...
+[05/15 21:42:15     67s] Set DBUPerIGU to M2 pitch 460.
+[05/15 21:42:15     67s] 
+[05/15 21:42:15     67s] Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T_phyCells.lef ...
+[05/15 21:42:15     67s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/15 21:42:15     67s] Type 'man IMPLF-200' for more detail.
+[05/15 21:42:15     67s] 
+[05/15 21:42:15     67s] ##  Check design process and node:  
+[05/15 21:42:15     67s] ##  Both design process and tech node are not set.
+[05/15 21:42:15     67s] 
+[05/15 21:42:15     67s] Loading view definition file from /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viewDefinition.tcl
+[05/15 21:42:15     67s] % Begin Load netlist data ... (date=05/15 21:42:15, mem=1930.8M)
+[05/15 21:42:15     67s] *** Begin netlist parsing (mem=1881.6M) ***
+[05/15 21:42:15     67s] Created 112 new cells from 2 timing libraries.
+[05/15 21:42:15     67s] Reading netlist ...
+[05/15 21:42:15     67s] Backslashed names will retain backslash and a trailing blank character.
+[05/15 21:42:15     67s] Reading verilogBinary netlist '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.v.bin'
+[05/15 21:42:15     67s] 
+[05/15 21:42:15     67s] *** Memory Usage v#1 (Current mem = 1881.598M, initial mem = 866.945M) ***
+[05/15 21:42:15     67s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1881.6M) ***
+[05/15 21:42:15     67s] % End Load netlist data ... (date=05/15 21:42:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=1941.2M, current mem=1941.2M)
+[05/15 21:42:15     67s] Top level cell is viterbi_top.
+[05/15 21:42:16     68s] Hooked 224 DB cells to tlib cells.
+[05/15 21:42:16     68s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1952.2M, current mem=1952.2M)
+[05/15 21:42:16     68s] Starting recursive module instantiation check.
+[05/15 21:42:16     68s] No recursion found.
+[05/15 21:42:16     68s] Building hierarchical netlist for Cell viterbi_top ...
+[05/15 21:42:16     68s] ***** UseNewTieNetMode *****.
+[05/15 21:42:16     68s] *** Netlist is unique.
+[05/15 21:42:16     68s] Setting Std. cell height to 4135 DBU (smallest netlist inst).
+[05/15 21:42:16     68s] ** info: there are 237 modules.
+[05/15 21:42:16     68s] ** info: there are 868 stdCell insts.
+[05/15 21:42:16     68s] ** info: there are 868 stdCell insts with at least one signal pin.
+[05/15 21:42:16     68s] ** info: there are 867 multi-height stdCell insts (57 stdCells)
+[05/15 21:42:16     68s] 
+[05/15 21:42:16     68s] *** Memory Usage v#1 (Current mem = 1917.098M, initial mem = 866.945M) ***
+[05/15 21:42:16     68s] *info: set bottom ioPad orient R0
+[05/15 21:42:16     68s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/15 21:42:16     68s] Type 'man IMPFP-3961' for more detail.
+[05/15 21:42:16     68s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/15 21:42:16     68s] Type 'man IMPFP-3961' for more detail.
+[05/15 21:42:16     68s] Start create_tracks
+[05/15 21:42:16     68s] Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+[05/15 21:42:16     68s] Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+[05/15 21:42:16     68s] Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+[05/15 21:42:17     68s] Loading preference file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/gui.pref.tcl ...
+[05/15 21:42:17     69s] Effort level <high> specified for tdgp_reg2reg_default path_group
+[05/15 21:42:17     69s] Slack adjustment of -0 applied on tdgp_reg2reg_default path_group
+[05/15 21:42:17     69s] add_rings command will ignore shorts while creating rings.
+[05/15 21:42:17     69s] add_rings command will disallow rings to go over rows.
+[05/15 21:42:17     69s] add_rings command will consider rows while creating rings.
+[05/15 21:42:17     69s] The ring targets are set to core/block ring wires.
+[05/15 21:42:17     69s] add_stripes will allow jog to connect padcore ring and block ring.
+[05/15 21:42:17     69s] 
+[05/15 21:42:17     69s] Stripes will not extend to closest target.
+[05/15 21:42:17     69s] When breaking rings, the power planner will consider the existence of blocks.
+[05/15 21:42:17     69s] add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[05/15 21:42:17     69s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[05/15 21:42:17     69s] Stripes will not be created over regions without power planning wires.
+[05/15 21:42:17     69s] Offset for stripe breaking is set to 0.
+[05/15 21:42:17     69s] Stripes will stop at the boundary of the specified area.
+[05/15 21:42:17     69s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[05/15 21:42:17     69s] Change floorplan default-technical-site to 'CoreSite'.
+[05/15 21:42:17     69s] Extraction setup Delayed 
+[05/15 21:42:17     69s] *Info: initialize multi-corner CTS.
+[05/15 21:42:18     69s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:01.0, peak res=2442.3M, current mem=2009.0M)
+[05/15 21:42:18     69s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/15 21:42:18     69s] 
+[05/15 21:42:18     69s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/15 21:42:18     69s] Summary for sequential cells identification: 
+[05/15 21:42:18     69s]   Identified SBFF number: 16
+[05/15 21:42:18     69s]   Identified MBFF number: 0
+[05/15 21:42:18     69s]   Identified SB Latch number: 2
+[05/15 21:42:18     69s]   Identified MB Latch number: 0
+[05/15 21:42:18     69s]   Not identified SBFF number: 0
+[05/15 21:42:18     69s]   Not identified MBFF number: 0
+[05/15 21:42:18     69s]   Not identified SB Latch number: 0
+[05/15 21:42:18     69s]   Not identified MB Latch number: 0
+[05/15 21:42:18     69s]   Number of sequential cells which are not FFs: 6
+[05/15 21:42:18     69s] Total number of combinational cells: 85
+[05/15 21:42:18     69s] Total number of sequential cells: 24
+[05/15 21:42:18     69s] Total number of tristate cells: 3
+[05/15 21:42:18     69s] Total number of level shifter cells: 0
+[05/15 21:42:18     69s] Total number of power gating cells: 0
+[05/15 21:42:18     69s] Total number of isolation cells: 0
+[05/15 21:42:18     69s] Total number of power switch cells: 0
+[05/15 21:42:18     69s] Total number of pulse generator cells: 0
+[05/15 21:42:18     69s] Total number of always on buffers: 0
+[05/15 21:42:18     69s] Total number of retention cells: 0
+[05/15 21:42:18     69s] Total number of physical cells: 0
+[05/15 21:42:18     69s] List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 CLKBUFX8 BUFX8 BUFX16
+[05/15 21:42:18     69s] Total number of usable buffers: 7
+[05/15 21:42:18     69s] List of unusable buffers:
+[05/15 21:42:18     69s] Total number of unusable buffers: 0
+[05/15 21:42:18     69s] List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+[05/15 21:42:18     69s] Total number of usable inverters: 9
+[05/15 21:42:18     69s] List of unusable inverters:
+[05/15 21:42:18     69s] Total number of unusable inverters: 0
+[05/15 21:42:18     69s] List of identified usable delay cells: DLY1X1[05/15 21:42:18     69s] 
+[05/15 21:42:18     69s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ DLY1X4 DLY2X4 DLY4X4
+[05/15 21:42:18     69s] Total number of identified usable delay cells: 4
+[05/15 21:42:18     69s] List of identified unusable delay cells:
+[05/15 21:42:18     69s] Total number of identified unusable delay cells: 0
+[05/15 21:42:18     69s] 
+[05/15 21:42:18     69s] TimeStamp Deleting Cell Server Begin ...
+[05/15 21:42:18     69s] 
+[05/15 21:42:18     69s] TimeStamp Deleting Cell Server End ...
+[05/15 21:42:18     69s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2456.9M, current mem=2456.9M)
+[05/15 21:42:18     69s] 
+[05/15 21:42:18     69s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/15 21:42:18     69s] Summary for sequential cells identification: 
+[05/15 21:42:18     69s]   Identified SBFF number: 16
+[05/15 21:42:18     69s]   Identified MBFF number: 0
+[05/15 21:42:18     69s]   Identified SB Latch number: 2
+[05/15 21:42:18     69s]   Identified MB Latch number: 0
+[05/15 21:42:18     69s]   Not identified SBFF number: 0
+[05/15 21:42:18     69s]   Not identified MBFF number: 0
+[05/15 21:42:18     69s]   Not identified SB Latch number: 0
+[05/15 21:42:18     69s]   Not identified MB Latch number: 0
+[05/15 21:42:18     69s]   Number of sequential cells which are not FFs: 6
+[05/15 21:42:18     69s]  Visiting view : wc
+[05/15 21:42:18     69s]    : PowerDomain = none : Weighted F : unweighted  = 60.60 (1.000) with rcCorner = 0
+[05/15 21:42:18     69s]    : PowerDomain = none : Weighted F : unweighted  = 51.30 (1.000) with rcCorner = -1
+[05/15 21:42:18     69s]  Visiting view : bc
+[05/15 21:42:18     69s]    : PowerDomain = none : Weighted F : unweighted  = 27.50 (1.000) with rcCorner = 0
+[05/15 21:42:18     69s]    : PowerDomain = none : Weighted F : unweighted  = 21.60 (1.000) with rcCorner = -1
+[05/15 21:42:18     69s] 
+[05/15 21:42:18     69s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/15 21:42:18     69s] 
+[05/15 21:42:18     69s] TimeStamp Deleting Cell Server Begin ...
+[05/15 21:42:18     69s] 
+[05/15 21:42:18     69s] TimeStamp Deleting Cell Server End ...
+[05/15 21:42:18     69s] Reading floorplan file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.fp.gz (mem = 2381.9M).
+[05/15 21:42:18     69s] % Begin Load floorplan data ... (date=05/15 21:42:18, mem=2459.5M)
+[05/15 21:42:18     69s] *info: reset 1041 existing net BottomPreferredLayer and AvoidDetour
+[05/15 21:42:18     69s] Deleting old partition specification.
+[05/15 21:42:18     69s] Set FPlanBox to (0 0 152260 144440)
+[05/15 21:42:18     69s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/15 21:42:18     69s] Type 'man IMPFP-3961' for more detail.
+[05/15 21:42:18     69s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[05/15 21:42:18     69s] Type 'man IMPFP-3961' for more detail.
+[05/15 21:42:18     69s]  ... processed partition successfully.
+[05/15 21:42:18     69s] Reading binary special route file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.fp.spr.gz (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version: 1)
+[05/15 21:42:18     69s] Convert 0 swires and 0 svias from compressed groups
+[05/15 21:42:18     69s] 18 swires and 32 svias were compressed
+[05/15 21:42:18     69s] 18 swires and 20 svias were decompressed from small or sparse groups
+[05/15 21:42:18     69s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2460.0M, current mem=2460.0M)
+[05/15 21:42:18     69s] There are 6 nets with weight being set
+[05/15 21:42:18     69s] There are 6 nets with bottomPreferredRoutingLayer being set
+[05/15 21:42:18     69s] There are 7 nets with avoidDetour being set
+[05/15 21:42:18     69s] Extracting standard cell pins and blockage ...... 
+[05/15 21:42:18     69s] Pin and blockage extraction finished
+[05/15 21:42:18     69s] Delete all existing relative floorplan constraints.
+[05/15 21:42:18     70s] % End Load floorplan data ... (date=05/15 21:42:18, total cpu=0:00:00.1, real=0:00:00.0, peak res=2461.4M, current mem=2461.4M)
+[05/15 21:42:18     70s] Reading congestion map file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.route.congmap.gz ...
+[05/15 21:42:18     70s] % Begin Load SymbolTable ... (date=05/15 21:42:18, mem=2461.4M)
+[05/15 21:42:18     70s] routingBox: (0 0) (152260 144440)
+[05/15 21:42:18     70s] Suppress "**WARN ..." messages.
+[05/15 21:42:18     70s] coreBox:    (10120 10120) (142140 134320)
+[05/15 21:42:18     70s] Un-suppress "**WARN ..." messages.
+[05/15 21:42:18     70s] % End Load SymbolTable ... (date=05/15 21:42:18, total cpu=0:00:00.0, real=0:00:00.0, peak res=2462.2M, current mem=2462.2M)
+[05/15 21:42:18     70s] Loading place ...
+[05/15 21:42:18     70s] % Begin Load placement data ... (date=05/15 21:42:18, mem=2462.2M)
+[05/15 21:42:18     70s] Reading placement file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.place.gz.
+[05/15 21:42:18     70s] ** Reading stdCellPlacement_binary (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version# 2) ...
+[05/15 21:42:18     70s] Read Views for adaptive view pruning ...
+[05/15 21:42:18     70s] Read 0 views from Binary DB for adaptive view pruning
+[05/15 21:42:18     70s] *** applyConnectGlobalNets disabled.
+[05/15 21:42:18     70s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2381.9M) ***
+[05/15 21:42:18     70s] Total net length = 2.313e+04 (1.338e+04 9.745e+03) (ext = 1.311e+03)
+[05/15 21:42:18     70s] % End Load placement data ... (date=05/15 21:42:18, total cpu=0:00:00.0, real=0:00:00.0, peak res=2462.9M, current mem=2462.8M)
+[05/15 21:42:19     70s] Reading PG file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.pg.gz, version#2, (Created by Innovus v23.37-s090_1 on       Thu May 14 18:09:16 2026)
+[05/15 21:42:19     70s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=2381.9M) ***
+[05/15 21:42:19     70s] % Begin Load routing data ... (date=05/15 21:42:19, mem=2463.1M)
+[05/15 21:42:19     70s] Reading routing file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.route.gz.
+[05/15 21:42:19     70s] Reading Innovus routing data (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026 Format: 23.1) ...
+[05/15 21:42:19     70s] *** Total 1013 nets are successfully restored.
+[05/15 21:42:19     70s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2381.9M) ***
+[05/15 21:42:19     70s] % End Load routing data ... (date=05/15 21:42:19, total cpu=0:00:00.1, real=0:00:00.0, peak res=2464.2M, current mem=2463.7M)
+[05/15 21:42:19     70s] TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[05/15 21:42:19     70s] Reading property file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.prop
+[05/15 21:42:19     70s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2381.9M) ***
+[05/15 21:42:19     70s] Reading dirtyarea snapshot file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.db.da.gz (Create by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version: 8).
+[05/15 21:42:19     70s] add_rings command will ignore shorts while creating rings.
+[05/15 21:42:19     70s] add_rings command will disallow rings to go over rows.
+[05/15 21:42:19     70s] add_rings command will consider rows while creating rings.
+[05/15 21:42:19     70s] The ring targets are set to core/block ring wires.
+[05/15 21:42:19     70s] add_stripes will allow jog to connect padcore ring and block ring.
+[05/15 21:42:19     70s] 
+[05/15 21:42:19     70s] Stripes will not extend to closest target.
+[05/15 21:42:19     70s] When breaking rings, the power planner will consider the existence of blocks.
+[05/15 21:42:19     70s] add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[05/15 21:42:19     70s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[05/15 21:42:19     70s] Stripes will not be created over regions without power planning wires.
+[05/15 21:42:19     70s] Offset for stripe breaking is set to 0.
+[05/15 21:42:19     70s] Stripes will stop at the boundary of the specified area.
+[05/15 21:42:19     70s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[05/15 21:42:19     70s] Change floorplan default-technical-site to 'CoreSite'.
+[05/15 21:42:19     70s] eee: Design meta data check started
+[05/15 21:42:19     70s] Loading preRoute extraction data from directory '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/extraction/' ...
+[05/15 21:42:19     70s] eee: Design meta data check completed
+[05/15 21:42:19     70s] Extraction setup Started for TopCell viterbi_top 
+[05/15 21:42:19     70s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[05/15 21:42:19     70s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[05/15 21:42:19     70s] eee: __QRC_SADV_USE_LE__ is set 0
+[05/15 21:42:19     70s] Generating auto layer map file.
+[05/15 21:42:19     70s] eee: cut Layer Id 33 mapped to tech Id 6 of Layer mcon 
+[05/15 21:42:19     70s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[05/15 21:42:19     70s] eee:       33	    mcon	        6	       mcon	Via            
+[05/15 21:42:19     70s] eee:        1	    met1	        7	     metal1	Metal          
+[05/15 21:42:19     70s] eee:       34	     via	        8	       via1	Via            
+[05/15 21:42:19     70s] eee:        2	    met2	        9	     metal2	Metal          
+[05/15 21:42:19     70s] eee:       35	    via2	       10	       via2	Via            
+[05/15 21:42:19     70s] eee:        3	    met3	       11	     metal3	Metal          
+[05/15 21:42:19     70s] eee:       36	    via3	       12	       via3	Via            
+[05/15 21:42:19     70s] eee:        4	    met4	       13	     metal4	Metal          
+[05/15 21:42:19     70s] eee:       37	    via4	       14	       via4	Via            
+[05/15 21:42:19     70s] eee:        5	    met5	       15	     metal5	Metal          
+[05/15 21:42:19     70s] eee: TechFile: /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen
+[05/15 21:42:19     70s] eee: HoWee  : 0 0 0 0 0 
+[05/15 21:42:19     70s] eee: Erosn  : 0 0 0 0 0 
+[05/15 21:42:19     70s] eee: nrColor: 0 0 0 0 0 
+[05/15 21:42:19     70s] eee: Save / Restore of RC patterns enabled 
+[05/15 21:42:19     70s] eee: Pattern meta data check started
+[05/15 21:42:19     70s] eee: Pattern meta data check completed
+[05/15 21:42:19     70s] eee: Pattern data restore started
+[05/15 21:42:19     70s] Loading preRoute extracted patterns from file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.techData.gz' ...
+[05/15 21:42:19     70s] eee: Pattern data restore completed
+[05/15 21:42:19     70s] Completed (cpu: 0:00:00.3 real: 0:00:00.0)
+[05/15 21:42:19     70s] Set Shrink Factor to 1.00000
+[05/15 21:42:19     70s] Summary of Active RC-Corners : 
+[05/15 21:42:19     70s]  
+[05/15 21:42:19     70s]  Analysis View: wc
+[05/15 21:42:19     70s]     RC-Corner Name        : rccorners
+[05/15 21:42:19     70s]     RC-Corner Index       : 0
+[05/15 21:42:19     70s]     RC-Corner Temperature : 25 Celsius
+[05/15 21:42:19     70s]     RC-Corner Cap Table   : ''
+[05/15 21:42:19     70s]     RC-Corner PreRoute Res Factor         : 1
+[05/15 21:42:19     70s]     RC-Corner PreRoute Cap Factor         : 1
+[05/15 21:42:19     70s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/15 21:42:19     70s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/15 21:42:19     70s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/15 21:42:19     70s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/15 21:42:19     70s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/15 21:42:19     70s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/15 21:42:19     70s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/15 21:42:19     70s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/15 21:42:19     70s]     RC-Corner Technology file: '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen'
+[05/15 21:42:19     70s]  
+[05/15 21:42:19     70s]  Analysis View: bc
+[05/15 21:42:19     70s]     RC-Corner Name        : rccorners
+[05/15 21:42:19     70s]     RC-Corner Index       : 0
+[05/15 21:42:19     70s]     RC-Corner Temperature : 25 Celsius
+[05/15 21:42:19     70s]     RC-Corner Cap Table   : ''
+[05/15 21:42:19     70s]     RC-Corner PreRoute Res Factor         : 1
+[05/15 21:42:19     70s]     RC-Corner PreRoute Cap Factor         : 1
+[05/15 21:42:19     70s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/15 21:42:19     70s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/15 21:42:19     70s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/15 21:42:19     70s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/15 21:42:19     70s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/15 21:42:19     70s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/15 21:42:19     70s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/15 21:42:19     70s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/15 21:42:19     70s]     RC-Corner Technology file: '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen'
+[05/15 21:42:19     70s] eee: RC Grid memory allocated = 1500 (5 X 5 X 5 X 12b)
+[05/15 21:42:19     70s] eee: Grid density data restore started
+[05/15 21:42:19     70s] eee: Grid density data restore completed
+[05/15 21:42:19     70s] eee: pegSigSF=1.070000
+[05/15 21:42:19     70s] eee: Blockage data restore started... [05/15 21:42:19     70s] Initializing multi-corner resistance tables ...
+completed.
+[05/15 21:42:19     70s] eee: Grid unit RC data restore started
+[05/15 21:42:19     70s] eee:     Restore started for corner rccorners
+[05/15 21:42:19     70s] eee:         Current session: rccorners Tech: /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen 25.000000 1.000000 1.000000 
+[05/15 21:42:19     70s] eee:         Saved   session: rccorners Tech: ../qrc/qrcTechFile_RCgen 25.000000 1.000000 1.000000 
+[05/15 21:42:19     70s] eee:     Restore completed for corner rccorners
+[05/15 21:42:19     70s] eee: Grid unit RC data restore completed
+[05/15 21:42:19     70s] eee: l=1 avDens=0.152811 usedTrk=220.047753 availTrk=1440.000000 sigTrk=220.047753
+[05/15 21:42:19     70s] eee: l=2 avDens=0.209631 usedTrk=301.869034 availTrk=1440.000000 sigTrk=301.869034
+[05/15 21:42:19     70s] eee: l=3 avDens=0.218357 usedTrk=237.114059 availTrk=1085.901639 sigTrk=237.114059
+[05/15 21:42:19     70s] eee: l=4 avDens=0.171854 usedTrk=185.099296 availTrk=1077.073171 sigTrk=185.099296
+[05/15 21:42:19     70s] eee: l=5 avDens=0.391966 usedTrk=70.939396 availTrk=180.983607 sigTrk=70.939396
+[05/15 21:42:19     70s] eee: LAM-FP: thresh=1 ; dimX=331.000000 ; dimY=314.000000 ; multX=1.000000 ; multY=1.000000 ; minP=460 ; fpMult=1.000000 ;
+[05/15 21:42:19     70s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.330195 uaWl=1.000000 uaWlH=0.240300 aWlH=0.000000 lMod=0 pMax=0.865400 pMod=80 pModAss=50 wcR=0.332500 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.000000 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/15 21:42:19     70s] eee: dbu = 1000, Design = [ll(0.000000, 0.000000) ur(152.260000, 144.440000)], Layers = [f(5) b(0)], Grid size = 41.400000 um, Grid Dim = (4 X 4)
+[05/15 21:42:19     70s] eee: Metal Layers Info:
+[05/15 21:42:19     70s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/15 21:42:19     70s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/15 21:42:19     70s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/15 21:42:19     70s] eee: |     met1 |   1 |   0.140 |   0.140 |   0.460 |  0.181 |   0.89 | H | 0 |  1 |
+[05/15 21:42:19     70s] eee: |     met2 |   2 |   0.140 |   0.140 |   0.460 |  0.182 |   0.89 | V | 0 |  1 |
+[05/15 21:42:19     70s] eee: |     met3 |   3 |   0.300 |   0.300 |   0.610 |  0.335 |   0.16 | H | 0 |  1 |
+[05/15 21:42:19     70s] eee: |     met4 |   4 |   0.300 |   0.300 |   0.615 |  0.311 |   0.16 | V | 0 |  1 |
+[05/15 21:42:19     70s] eee: |     met5 |   5 |   1.600 |   1.600 |   3.660 |  0.260 |   0.02 | H | 0 |  1 |
+[05/15 21:42:19     70s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/15 21:42:19     70s] eee: uC/uR for corner rccorners, min-width/min-spacing, 30 perc over/under densities.
+[05/15 21:42:19     70s] eee: +-----------------------NDR Info-----------------------+
+[05/15 21:42:19     70s] eee: NDR Count = 0, Fake NDR = 0
+[05/15 21:42:19     70s] Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+[05/15 21:42:19     70s] Restore PreRoute all RC Grid data successful.[05/15 21:42:19     70s] Start generating vias ..
+### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=1069576481 routing_via=1 timing=1 sns=1 ppa_info=1
+[05/15 21:42:19     70s] #Skip building auto via since it is not turned on.
+[05/15 21:42:19     70s] Extracting standard cell pins and blockage ...... 
+[05/15 21:42:19     70s] Pin and blockage extraction finished
+[05/15 21:42:19     70s] Via generation completed.
+[05/15 21:42:20     70s] % Begin Load power constraints ... (date=05/15 21:42:19, mem=2494.8M)
+[05/15 21:42:20     70s] source /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top_power_constraints.tcl
+[05/15 21:42:20     70s] 'set_default_switching_activity' finished successfully.
+[05/15 21:42:20     70s] % End Load power constraints ... (date=05/15 21:42:20, total cpu=0:00:00.1, real=0:00:00.0, peak res=2516.6M, current mem=2516.6M)
+[05/15 21:42:20     70s] % Begin load AAE data ... (date=05/15 21:42:20, mem=2543.3M)
+[05/15 21:42:20     71s] **WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[05/15 21:42:20     71s] AAE DB initialization (MEM=2549.664062 CPU=0:00:00.0 REAL=0:00:00.0) 
+[05/15 21:42:20     71s] % End load AAE data ... (date=05/15 21:42:20, total cpu=0:00:00.7, real=0:00:00.0, peak res=2550.1M, current mem=2550.1M)
+[05/15 21:42:20     71s] Restoring CCOpt config...
+[05/15 21:42:20     71s] 
+[05/15 21:42:20     71s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/15 21:42:20     71s] Summary for sequential cells identification: 
+[05/15 21:42:20     71s]   Identified SBFF number: 16
+[05/15 21:42:20     71s]   Identified MBFF number: 0
+[05/15 21:42:20     71s]   Identified SB Latch number: 2
+[05/15 21:42:20     71s]   Identified MB Latch number: 0
+[05/15 21:42:20     71s]   Not identified SBFF number: 0
+[05/15 21:42:20     71s]   Not identified MBFF number: 0
+[05/15 21:42:20     71s]   Not identified SB Latch number: 0
+[05/15 21:42:20     71s]   Not identified MB Latch number: 0
+[05/15 21:42:20     71s]   Number of sequential cells which are not FFs: 6
+[05/15 21:42:20     71s]  Visiting view : wc
+[05/15 21:42:20     71s]    : PowerDomain = none : Weighted F : unweighted  = 64.10 (1.000) with rcCorner = 0
+[05/15 21:42:20     71s]    : PowerDomain = none : Weighted F : unweighted  = 51.30 (1.000) with rcCorner = -1
+[05/15 21:42:20     71s]  Visiting view : bc
+[05/15 21:42:20     71s]    : PowerDomain = none : Weighted F : unweighted  = 30.00 (1.000) with rcCorner = 0
+[05/15 21:42:20     71s]    : PowerDomain = none : Weighted F : unweighted  = 21.60 (1.000) with rcCorner = -1
+[05/15 21:42:20     71s] 
+[05/15 21:42:20     71s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/15 21:42:20     71s]   Extracting original clock gating for clk...
+[05/15 21:42:20     71s]     clock_tree clk contains 124 sinks and 0 clock gates.
+[05/15 21:42:20     71s]   Extracting original clock gating for clk done.
+[05/15 21:42:20     71s]   The skew group clk/sdc_cons was created. It contains 124 sinks and 1 sources.
+[05/15 21:42:20     71s]   The skew group clk/sdc_cons was created. It contains 124 sinks and 1 sources.
+[05/15 21:42:20     71s] Restoring CCOpt config done.
+[05/15 21:42:20     71s] 
+[05/15 21:42:20     71s] TimeStamp Deleting Cell Server Begin ...
+[05/15 21:42:20     71s] 
+[05/15 21:42:20     71s] TimeStamp Deleting Cell Server End ...
+[05/15 21:42:20     71s] 
+[05/15 21:42:20     71s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/15 21:42:20     71s] Summary for sequential cells identification: 
+[05/15 21:42:20     71s]   Identified SBFF number: 16
+[05/15 21:42:20     71s]   Identified MBFF number: 0
+[05/15 21:42:20     71s]   Identified SB Latch number: 2
+[05/15 21:42:20     71s]   Identified MB Latch number: 0
+[05/15 21:42:20     71s]   Not identified SBFF number: 0
+[05/15 21:42:20     71s]   Not identified MBFF number: 0
+[05/15 21:42:20     71s]   Not identified SB Latch number: 0
+[05/15 21:42:20     71s]   Not identified MB Latch number: 0
+[05/15 21:42:20     71s]   Number of sequential cells which are not FFs: 6
+[05/15 21:42:20     71s] Total number of combinational cells: 85
+[05/15 21:42:20     71s] Total number of sequential cells: 24
+[05/15 21:42:20     71s] Total number of tristate cells: 3
+[05/15 21:42:20     71s] Total number of level shifter cells: 0
+[05/15 21:42:20     71s] Total number of power gating cells: 0
+[05/15 21:42:20     71s] Total number of isolation cells: 0
+[05/15 21:42:20     71s] Total number of power switch cells: 0
+[05/15 21:42:20     71s] Total number of pulse generator cells: 0
+[05/15 21:42:20     71s] Total number of always on buffers: 0
+[05/15 21:42:20     71s] Total number of retention cells: 0
+[05/15 21:42:20     71s] Total number of physical cells: 0
+[05/15 21:42:20     71s] List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 CLKBUFX8 BUFX8 BUFX16
+[05/15 21:42:20     71s] Total number of usable buffers: 7
+[05/15 21:42:20     71s] List of unusable buffers:
+[05/15 21:42:20     71s] Total number of unusable buffers: 0
+[05/15 21:42:20     71s] List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+[05/15 21:42:20     71s] Total number of usable inverters: 9
+[05/15 21:42:20     71s] List of unusable inverters:
+[05/15 21:42:20     71s] Total number of unusable inverters: 0
+[05/15 21:42:20     71s] List of identified usable delay cells: DLY1X1 DLY1X4[05/15 21:42:20     71s] 
+[05/15 21:42:20     71s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ DLY2X4 DLY4X4
+[05/15 21:42:20     71s] Total number of identified usable delay cells: 4
+[05/15 21:42:20     71s] List of identified unusable delay cells:
+[05/15 21:42:20     71s] Total number of identified unusable delay cells: 0
+[05/15 21:42:20     71s] 
+[05/15 21:42:20     71s] TimeStamp Deleting Cell Server Begin ...
+[05/15 21:42:20     71s] 
+[05/15 21:42:20     71s] TimeStamp Deleting Cell Server End ...
+[05/15 21:42:20     71s] #% End load design ... (date=05/15 21:42:20, total cpu=0:00:07.7, real=0:00:08.0, peak res=2573.8M, current mem=2555.0M)
+[05/15 21:42:20     71s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 21:42:21     71s] 
+[05/15 21:42:21     71s] *** Summary of all messages that are not suppressed in this session:
+[05/15 21:42:21     71s] Severity  ID               Count  Summary                                  
+[05/15 21:42:21     71s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/15 21:42:21     71s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/15 21:42:21     71s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[05/15 21:42:21     71s] *** Message Summary: 6 warning(s), 0 error(s)
+[05/15 21:42:21     71s] 
+[05/15 21:42:21     71s] 0
+[05/15 21:42:21     71s] @innovus 2> create_clock_tree_spec
+Creating clock tree spec for modes (timing configs): sdc_cons
+[05/15 21:50:16    105s] cts_spec_config_create_generator_skew_groups=true: create_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+[05/15 21:50:16    105s] **ERROR: (IMPCCOPT-2048):	Clock tree extraction failed. Reason Cannot run automatic clock tree extraction as clock trees are already defined..
+[05/15 21:50:16    105s] 
+[05/15 21:50:16    105s] 
+[05/15 21:50:16    105s] @innovus 3> write_db placeOpt
+[05/15 22:24:46    245s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+#% Begin save design ... (date=05/15 22:24:46, mem=2685.2M)
+[05/15 22:24:46    245s] INFO: Current data have to be saved into a temporary db: 'placeOpt.tmp' first. It will be renamed to the correct name 'placeOpt' after the old db was deleted.
+[05/15 22:24:46    245s] % Begin Save ccopt configuration ... (date=05/15 22:24:46, mem=2685.2M)
+[05/15 22:24:46    245s] % End Save ccopt configuration ... (date=05/15 22:24:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=2686.0M, current mem=2686.0M)
+[05/15 22:24:46    245s] % Begin Save netlist data ... (date=05/15 22:24:46, mem=2703.8M)
+[05/15 22:24:46    245s] Writing Binary DB to placeOpt.tmp/viterbi_top.v.bin in single-threaded mode...
+[05/15 22:24:46    245s] % End Save netlist data ... (date=05/15 22:24:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=2705.8M, current mem=2703.8M)
+[05/15 22:24:46    245s] Saving symbol-table file ...
+[05/15 22:24:46    245s] Saving congestion map file placeOpt.tmp/viterbi_top.route.congmap.gz ...
+[05/15 22:24:46    245s] % Begin Save AAE data ... (date=05/15 22:24:46, mem=2704.5M)
+[05/15 22:24:46    245s] Saving AAE Data ...
+[05/15 22:24:46    245s] % End Save AAE data ... (date=05/15 22:24:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=2730.5M, current mem=2707.1M)
+[05/15 22:24:46    245s] Saving preference file placeOpt.tmp/gui.pref.tcl ...
+[05/15 22:24:47    246s] Saving mode setting ...
+[05/15 22:24:47    246s] Saving root attributes to be loaded post write_db ...
+[05/15 22:24:47    247s] Saving global file ...
+[05/15 22:24:48    247s] Saving root attributes to be loaded previous write_db ...
+[05/15 22:24:49    248s] % Begin Save floorplan data ... (date=05/15 22:24:49, mem=2716.1M)
+[05/15 22:24:49    248s] Saving floorplan file ...
+[05/15 22:24:49    248s] Convert 0 swires and 0 svias from compressed groups
+[05/15 22:24:49    248s] % End Save floorplan data ... (date=05/15 22:24:49, total cpu=0:00:00.1, real=0:00:00.0, peak res=2716.9M, current mem=2716.9M)
+[05/15 22:24:49    248s] Saving PG file placeOpt.tmp/viterbi_top.pg.gz, version#2, (Created by Innovus v23.37-s090_1 on Fri May 15 22:24:49 2026)
+[05/15 22:24:49    248s] *** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2921.1M) ***
+[05/15 22:24:49    248s] *info - save blackBox cells to lef file placeOpt.tmp/viterbi_top.bbox.lef
+[05/15 22:24:49    248s] Saving Drc markers ...
+[05/15 22:24:49    248s] ... No Drc file written since there is no markers found.
+[05/15 22:24:49    248s] % Begin Save placement data ... (date=05/15 22:24:49, mem=2717.1M)
+[05/15 22:24:49    248s] ** Saving stdCellPlacement_binary (version# 2) ...
+[05/15 22:24:49    248s] Save Adaptive View Pruning View Names to Binary file
+[05/15 22:24:49    248s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2921.1M) ***
+[05/15 22:24:49    248s] % End Save placement data ... (date=05/15 22:24:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=2717.6M, current mem=2717.6M)
+[05/15 22:24:49    248s] % Begin Save routing data ... (date=05/15 22:24:49, mem=2717.6M)
+[05/15 22:24:49    248s] Saving route file ...
+[05/15 22:24:49    248s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2921.1M) ***
+[05/15 22:24:49    248s] % End Save routing data ... (date=05/15 22:24:49, total cpu=0:00:00.1, real=0:00:00.0, peak res=2717.8M, current mem=2717.8M)
+[05/15 22:24:49    248s] Saving property file placeOpt.tmp/viterbi_top.prop
+[05/15 22:24:49    248s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2921.1M) ***
+[05/15 22:24:49    248s] #Saving pin access data to file placeOpt.tmp/viterbi_top.apa ...
+[05/15 22:24:49    248s] Saving preRoute extracted patterns in file 'placeOpt.tmp/viterbi_top.techData.gz' ...
+[05/15 22:24:49    248s] Saving preRoute extraction data in directory 'placeOpt.tmp/extraction/' ...
+[05/15 22:24:49    248s] eee: Checksum of RC Grid density data=60
+[05/15 22:24:50    248s] % Begin Save power constraints data ... (date=05/15 22:24:49, mem=2720.9M)
+[05/15 22:24:50    248s] % End Save power constraints data ... (date=05/15 22:24:50, total cpu=0:00:00.1, real=0:00:00.0, peak res=2720.9M, current mem=2720.9M)
+[05/15 22:24:50    249s] **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+[05/15 22:24:50    249s] **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+[05/15 22:24:50    249s] Generated self-contained design placeOpt.tmp
+[05/15 22:24:50    249s] #% End save design ... (date=05/15 22:24:50, total cpu=0:00:03.9, real=0:00:04.0, peak res=2774.8M, current mem=2748.2M)
+[05/15 22:24:50    249s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 22:24:50    249s] 
+[05/15 22:24:50    249s] *** Summary of all messages that are not suppressed in this session:
+[05/15 22:24:50    249s] Severity  ID               Count  Summary                                  
+[05/15 22:24:50    249s] WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+[05/15 22:24:50    249s] *** Message Summary: 2 warning(s), 0 error(s)
+[05/15 22:24:50    249s] 
+[05/15 22:24:50    249s] 0
+[05/15 22:24:50    249s] @innovus 4> set_db cts_buffer_cells {CLKBUFX4 CLKBUFX8}
+1 {CLKBUFX4 CLKBUFX8}
+[05/15 22:25:02    250s] @innovus 5> set_db cts_inverter_cells {CLKINVX4 CLKINVX8}
+1 {CLKINVX4 CLKINVX8}
+[05/15 22:25:09    250s] @innovus 6> create_clock_tree_spec
+Creating clock tree spec for modes (timing configs): sdc_cons
+[05/15 22:25:15    251s] cts_spec_config_create_generator_skew_groups=true: create_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+[05/15 22:25:15    251s] **ERROR: (IMPCCOPT-2048):	Clock tree extraction failed. Reason Cannot run automatic clock tree extraction as clock trees are already defined..
+[05/15 22:25:15    251s] 
+[05/15 22:25:15    251s] 
+[05/15 22:25:15    251s] @innovus 7> 
+[05/15 22:25:40    252s] --------------------------------------------------------------------------------
+[05/15 22:25:40    252s] Exiting Innovus on Fri May 15 22:25:40 2026
+[05/15 22:25:40    252s]   Total CPU time:     0:04:15
+[05/15 22:25:40    252s]   Total real time:    0:44:35
+[05/15 22:25:40    252s]   Peak memory (main): 2754.41MB
+[05/15 22:25:40    252s] 
+[05/15 22:25:40    252s] 
+[05/15 22:25:40    252s] *** Memory Usage v#1 (Current mem = 2959.285M, initial mem = 866.945M) ***
+[05/15 22:25:40    252s] 
+[05/15 22:25:40    252s] *** Summary of all messages that are not suppressed in this session:
+[05/15 22:25:40    252s] Severity  ID               Count  Summary                                  
+[05/15 22:25:40    252s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/15 22:25:40    252s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/15 22:25:40    252s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[05/15 22:25:40    252s] ERROR     IMPCCOPT-2048        2  Clock tree extraction failed. Reason %s....
+[05/15 22:25:40    252s] WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+[05/15 22:25:40    252s] *** Message Summary: 8 warning(s), 2 error(s)
+[05/15 22:25:40    252s] 
+[05/15 22:25:40    252s] --- Ending "Innovus" (totcpu=0:04:13, real=0:44:33, mem=2959.3M) ---

@@ -1,0 +1,299 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.37-s090_1, built Mon Feb 9 16:09:58 PST 2026
+Options:	-stylus 
+Date:		Fri Jun  5 18:27:19 2026
+Host:		iclab (x86_64 w/Linux 4.18.0-553.111.1.el8_10.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz 40960KB)
+OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+
+License:
+		[18:27:20.483745] Configured Lic search path (23.02-s006): /home/cadence/license/license.dat
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_743957_59af706a-9eb6-4171-9db9-dba81680a5c3_iclab_iclab16_uXRthN.
+
+Change the soft stacksize limit to 0.2%RAM (256 mbytes). Set global soft_stack_size_limit to change the value.
+Info: Process UID = 743957 / 59af706a-9eb6-4171-9db9-dba81680a5c3 / Kh05RZeBL4
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> read_db postRouteOpt
+#% Begin load design ... (date=06/05 18:29:50, mem=1879.7M)
+AAE_INFO: switching set_db delaycal_enable_si from false to true ...
+AAE_INFO: The setting is changed from false to true in set_db delaycal_enable_si
+Loading design 'viterbi_top' saved by 'Innovus' '23.37-s090_1' on 'Thu May 14 18:09:17 2026'.
+Reading max_timing timing library '/home/iclab16/Desktop/viterbi_binh/lib/sky130_ss_1.62_125_nldm.lib' ...
+Read 112 cells in library 'sky130_ss_1.62_125' 
+Reading min_timing timing library '/home/iclab16/Desktop/viterbi_binh/lib/sky130_ff_1.98_0_nldm.lib' ...
+Read 112 cells in library 'sky130_ff_1.98_0' 
+default_mapping_tc_2 default_mapping_tc_1
+rccorners
+
+Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T.tlef ...
+
+Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T.lef ...
+Set DBUPerIGU to M2 pitch 460.
+
+Loading LEF file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/lef/sky130_scl_9T_phyCells.lef ...
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viewDefinition.tcl
+% Begin Load netlist data ... (date=06/05 18:29:53, mem=1902.6M)
+*** Begin netlist parsing (mem=1890.9M) ***
+Created 112 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1890.934M, initial mem = 866.945M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1890.9M) ***
+% End Load netlist data ... (date=06/05 18:29:53, total cpu=0:00:00.1, real=0:00:00.0, peak res=1913.1M, current mem=1913.1M)
+Top level cell is viterbi_top.
+Hooked 224 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell viterbi_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 237 modules.
+** info: there are 868 stdCell insts.
+** info: there are 868 stdCell insts with at least one signal pin.
+** info: there are 867 multi-height stdCell insts (57 stdCells)
+
+*** Memory Usage v#1 (Current mem = 1919.434M, initial mem = 866.945M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+Loading preference file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/gui.pref.tcl ...
+Effort level <high> specified for tdgp_reg2reg_default path_group
+Slack adjustment of -0 applied on tdgp_reg2reg_default path_group
+add_rings command will ignore shorts while creating rings.
+add_rings command will disallow rings to go over rows.
+add_rings command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 85
+Total number of sequential cells: 24
+Total number of tristate cells: 3
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 CLKBUFX8 BUFX8 BUFX16
+Total number of usable buffers: 7
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+Total number of usable inverters: 9
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.fp.gz (mem = 2381.2M).
+% Begin Load floorplan data ... (date=06/05 18:29:56, mem=2430.7M)
+*info: reset 1041 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 152260 144440)
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+ ... processed partition successfully.
+Reading binary special route file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.fp.spr.gz (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+18 swires and 32 svias were compressed
+18 swires and 20 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2432.1M, current mem=2432.1M)
+There are 6 nets with weight being set
+There are 6 nets with bottomPreferredRoutingLayer being set
+There are 7 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Delete all existing relative floorplan constraints.
+% End Load floorplan data ... (date=06/05 18:29:57, total cpu=0:00:00.1, real=0:00:01.0, peak res=2432.7M, current mem=2432.7M)
+Reading congestion map file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=06/05 18:29:57, mem=2432.7M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=06/05 18:29:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=2433.4M, current mem=2433.4M)
+Loading place ...
+% Begin Load placement data ... (date=06/05 18:29:57, mem=2433.4M)
+Reading placement file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2381.2M) ***
+Total net length = 2.313e+04 (1.338e+04 9.745e+03) (ext = 1.311e+03)
+% End Load placement data ... (date=06/05 18:29:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=2434.1M, current mem=2434.0M)
+Reading PG file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.pg.gz, version#2, (Created by Innovus v23.37-s090_1 on       Thu May 14 18:09:16 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2381.2M) ***
+% Begin Load routing data ... (date=06/05 18:29:57, mem=2434.3M)
+Reading routing file - /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.route.gz.
+Reading Innovus routing data (Created by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026 Format: 23.1) ...
+*** Total 1013 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2381.2M) ***
+% End Load routing data ... (date=06/05 18:29:57, total cpu=0:00:00.1, real=0:00:00.0, peak res=2435.9M, current mem=2434.9M)
+TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2381.2M) ***
+Reading dirtyarea snapshot file /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.db.da.gz (Create by Innovus v23.37-s090_1 on Thu May 14 18:09:16 2026, version: 8).
+max_delay min_delay
+add_rings command will ignore shorts while creating rings.
+add_rings command will disallow rings to go over rows.
+add_rings command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'CoreSite'.
+Loading preRoute extraction data from directory '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/extraction/' ...
+Extraction setup Started for TopCell viterbi_top 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Loading preRoute extracted patterns from file '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top.techData.gz' ...
+Completed (cpu: 0:00:00.3 real: 0:00:00.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: wc
+    RC-Corner Name        : rccorners
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen'
+ 
+ Analysis View: bc
+    RC-Corner Name        : rccorners
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/libs/mmmc/rccorners/qrcTechFile_RCgen'
+Initializing multi-corner resistance tables ...
+Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=06/05 18:29:58, mem=2466.0M)
+source /home/iclab16/Desktop/viterbi_binh/physiscal_design/postRouteOpt/viterbi_top_power_constraints.tcl
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=06/05 18:29:58, total cpu=0:00:00.1, real=0:00:00.0, peak res=2487.9M, current mem=2487.9M)
+max_delay min_delay
+% Begin load AAE data ... (date=06/05 18:29:58, mem=2514.6M)
+**WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+AAE DB initialization (MEM=2520.964844 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=06/05 18:29:59, total cpu=0:00:00.6, real=0:00:01.0, peak res=2521.3M, current mem=2521.3M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 124 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/sdc_cons was created. It contains 124 sinks and 1 sources.
+  The skew group clk/sdc_cons was created. It contains 124 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 85
+Total number of sequential cells: 24
+Total number of tristate cells: 3
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 CLKBUFX8 BUFX8 BUFX16
+Total number of usable buffers: 7
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+Total number of usable inverters: 9
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% End load design ... (date=06/05 18:29:59, total cpu=0:00:07.8, real=0:00:09.0, peak res=2545.1M, current mem=2526.3M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+*** Message Summary: 6 warning(s), 0 error(s)
+
+0
+@innovus 2> 
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Jun  5 18:42:45 2026
+  Total CPU time:     0:02:08
+  Total real time:    0:15:28
+  Peak memory (main): 2650.77MB
+
+
+*** Memory Usage v#1 (Current mem = 2836.809M, initial mem = 866.945M) ***
+*** Message Summary: 6 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:09, real=0:15:26, mem=2836.8M) ---

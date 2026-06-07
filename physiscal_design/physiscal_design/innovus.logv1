@@ -1,0 +1,55 @@
+[05/14 18:12:38      0s] 
+[05/14 18:12:38      0s] Cadence Innovus(TM) Implementation System.
+[05/14 18:12:38      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/14 18:12:38      0s] 
+[05/14 18:12:38      0s] Version:	v23.37-s090_1, built Mon Feb 9 16:09:58 PST 2026
+[05/14 18:12:38      0s] Options:	-stylus 
+[05/14 18:12:38      0s] Date:		Thu May 14 18:12:38 2026
+[05/14 18:12:38      0s] Host:		iclab (x86_64 w/Linux 4.18.0-553.111.1.el8_10.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz 40960KB)
+[05/14 18:12:38      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[05/14 18:12:38      0s] 
+[05/14 18:12:38      0s] License:
+[05/14 18:12:38      0s] 		[18:12:38.483769] Configured Lic search path (23.02-s006): /home/cadence/license/license.dat
+[05/14 18:12:38      0s] 
+[05/14 18:12:38      0s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[05/14 18:12:38      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[05/14 18:12:59     41s] Memory management switch to non-aggressive memory release mode.
+[05/14 18:12:59     41s] 
+[05/14 18:12:59     41s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[05/14 18:12:59     41s] 
+[05/14 18:13:00     41s] 
+[05/14 18:13:00     41s] 
+[05/14 18:13:05     48s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.37-s090_1 (64bit) 02/09/2026 16:09 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:13:11     53s] @(#)CDS: NanoRoute 23.37-s090_1 NR260126-2134/23_17-UB (database version 18.20.682_1) {superthreading v2.20}
+[05/14 18:13:11     53s] @(#)CDS: AAE 23.17-s025 (64bit) 02/09/2026 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:13:11     53s] @(#)CDS: CTE 23.17-s038_1 () Feb  4 2026 22:23:13 ( )
+[05/14 18:13:11     53s] @(#)CDS: SYNTECH 23.17-s006_1 () Jan 20 2026 01:15:57 ( )
+[05/14 18:13:11     53s] @(#)CDS: CPE v23.17-s060
+[05/14 18:13:11     53s] @(#)CDS: IQuantus/TQuantus 23.1.1-s583 (64bit) Mon Nov 24 21:09:39 PST 2025 (Linux 3.10.0-693.el7.x86_64)
+[05/14 18:13:11     53s] @(#)CDS: OA 22.61-p027 Wed May 14 22:25:16 2025
+[05/14 18:13:11     53s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[05/14 18:13:11     53s] @(#)CDS: RCDB 11.15.0
+[05/14 18:13:11     53s] @(#)CDS: STYLUS 23.16-s001_1 (07/11/2025 08:51 PDT)
+[05/14 18:13:11     53s] @(#)CDS: IntegrityPlanner-23.17-17130 (23.17) (2025-12-03 09:08:16+0800)
+[05/14 18:13:11     53s] @(#)CDS: SYNTHESIS_ENGINE 23.17-s085
+[05/14 18:13:11     53s] Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_1979990_59c55d5d-0129-4847-970e-0ee84d542f89_iclab_iclab16_gHiOgW.
+
+[05/14 18:13:11     53s] Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_1979990_59c55d5d-0129-4847-970e-0ee84d542f89_iclab_iclab16_gHiOgW.
+[05/14 18:13:11     53s] 
+[05/14 18:13:11     53s] Change the soft stacksize limit to 0.2%RAM (256 mbytes). Set global soft_stack_size_limit to change the value.
+[05/14 18:13:14     56s] Info: Process UID = 1979990 / 59c55d5d-0129-4847-970e-0ee84d542f89 / 8NtgpPm9Go
+[05/14 18:13:14     56s] 
+[05/14 18:13:14     56s] **INFO:  MMMC transition support version v31-84 
+[05/14 18:13:14     56s] 
+[05/14 18:13:20     62s] @innovus 1> 
+[05/14 18:17:45     78s] --------------------------------------------------------------------------------
+[05/14 18:17:45     78s] Exiting Innovus on Thu May 14 18:17:45 2026
+[05/14 18:17:45     78s]   Total CPU time:     0:01:19
+[05/14 18:17:45     78s]   Total real time:    0:05:08
+[05/14 18:17:45     78s]   Peak memory (main): 1916.17MB
+[05/14 18:17:45     78s] 
+[05/14 18:17:45     78s] 
+[05/14 18:17:45     78s] *** Memory Usage v#1 (Current mem = 1802.945M, initial mem = 866.945M) ***
+[05/14 18:17:45     78s] *** Message Summary: 0 warning(s), 0 error(s)
+[05/14 18:17:45     78s] 
+[05/14 18:17:45     78s] --- Ending "Innovus" (totcpu=0:01:20, real=0:05:07, mem=1802.9M) ---

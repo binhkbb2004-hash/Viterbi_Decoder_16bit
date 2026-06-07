@@ -1,0 +1,32 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.37-s090_1, built Mon Feb 9 16:09:58 PST 2026
+Options:	-stylus 
+Date:		Thu May 14 18:26:33 2026
+Host:		iclab (x86_64 w/Linux 4.18.0-553.111.1.el8_10.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz 40960KB)
+OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+
+License:
+		[18:26:33.483769] Configured Lic search path (23.02-s006): /home/cadence/license/license.dat
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /home/iclab16/Desktop/viterbi_binh/physiscal_design/innovus_temp_2062201_4e4855ea-e2fd-4209-a3ca-6b0f9720e863_iclab_iclab16_Fk3ZkU.
+
+Change the soft stacksize limit to 0.2%RAM (256 mbytes). Set global soft_stack_size_limit to change the value.
+Info: Process UID = 2062201 / 4e4855ea-e2fd-4209-a3ca-6b0f9720e863 / SynsmtvtI2
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu May 14 18:27:58 2026
+  Total CPU time:     0:01:05
+  Total real time:    0:01:27
+  Peak memory (main): 1880.20MB
+
+
