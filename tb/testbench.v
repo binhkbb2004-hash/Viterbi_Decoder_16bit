@@ -1,5 +1,4 @@
 `timescale 1ns/1ps
-
 module testbench ();
     reg clk;
     reg rst_n;
@@ -27,7 +26,7 @@ module testbench ();
     // Biến phụ
     integer fd1, fd2;
     integer status1, status2;
-    integer test_num = 0; // testcase
+    integer test_num = 0; // số testcase
     integer pass_cnt = 0; // số case pass
     integer fail_cnt = 0; // số case fail
     reg [15:0] exp_in;

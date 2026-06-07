@@ -1,17 +1,17 @@
 module add_comp_slt (
-    input  wire       clk,
-    input  wire       rst_n,
-    input  wire       i_valid, 
-    input  wire       i_sof,   
-    input  wire [1:0] hd_00, hd_01, hd_10, hd_11,
+    input wire clk,
+    input wire rst_n,
+    input wire i_valid, 
+    input wire i_sof,   
+    input wire [1:0] hd_00, hd_01, hd_10, hd_11,
     
     // Dữ liệu xuất ra cho memory và traceback
-    output reg  [1:0] prev_st_00, prev_st_01, prev_st_10, prev_st_11,
-    output reg  [1:0] slt_node,
+    output reg [1:0] prev_st_00, prev_st_01, prev_st_10, prev_st_11,
+    output reg [1:0] slt_node,
     
     // Tín hiệu Hand-shake xuất ra cho memory
-    output reg        o_valid,  
-    output reg        o_sof     
+    output reg o_valid,  
+    output reg o_sof     
 );
 
     // Thanh ghi lưu PM nội bộ
@@ -73,8 +73,7 @@ module add_comp_slt (
             slt_node   <= 2'b00;
             o_valid    <= 1'b0;
             o_sof      <= 1'b0;
-        end 
-        else if (i_valid) begin
+        end else if (i_valid) begin
             // Chỉ chốt dữ liệu khi cờ i_valid báo có dữ liệu
             pm_00      <= sum00;
             pm_01      <= sum01;
@@ -91,8 +90,7 @@ module add_comp_slt (
             // Dịch trễ cờ sang module sau 1 nhịp ck (vì tính toán mất 1 clk)
             o_valid    <= 1'b1;
             o_sof      <= i_sof; 
-        end
-        else begin
+        end else begin
             // Khi không có dữ liệu hợp lệ, tắt cờ o_valid
             // Các dữ liệu khác giữ nguyên
             pm_00      <= pm_00;

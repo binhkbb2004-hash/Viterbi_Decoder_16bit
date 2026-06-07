@@ -1,31 +1,31 @@
 module viterbi_top (
-    input  wire        clk,
-    input  wire        rst_n,
-    input  wire        i_start,
-    input  wire [15:0] i_data, // Dữ liệu mã hóa đầu vào
-    output wire [7:0]  o_data, // Dữ liệu giải mã đầu ra
-    output wire        o_done // Cờ báo hiệu hoàn tất
+    input wire clk,
+    input wire rst_n,
+    input wire i_start,
+    input wire [15:0] i_data, // Dữ liệu mã hóa đầu vào
+    output wire [7:0] o_data, // Dữ liệu giải mã đầu ra
+    output wire o_done // Cờ báo hiệu hoàn tất
 );
     // Khai báo dây nối nội bộ
     // extract_bit -> branch_metric
-    wire [1:0]  w_rx;
-    wire        w_valid_1;
-    wire        w_sof_1;
+    wire [1:0] w_rx;
+    wire w_valid_1;
+    wire w_sof_1;
 
     // branch_metric -> add_comp_slt
-    wire [1:0]  w_hd_00, w_hd_01, w_hd_10, w_hd_11;
-    wire        w_valid_2;
-    wire        w_sof_2;
+    wire [1:0] w_hd_00, w_hd_01, w_hd_10, w_hd_11;
+    wire w_valid_2;
+    wire w_sof_2;
 
     // add_comp_slt -> memory & traceback
-    wire [1:0]  w_prev_st_00, w_prev_st_01, w_prev_st_10, w_prev_st_11;
-    wire [1:0]  w_slt_node; 
-    wire        w_valid_3;
-    wire        w_sof_3;
+    wire [1:0] w_prev_st_00, w_prev_st_01, w_prev_st_10, w_prev_st_11;
+    wire [1:0] w_slt_node; 
+    wire w_valid_3;
+    wire w_sof_3;
 
     // memory -> traceback
-    wire [1:0]  w_bck_prev_st_00, w_bck_prev_st_01, w_bck_prev_st_10, w_bck_prev_st_11;
-    wire        w_memory_done;
+    wire [1:0] w_bck_prev_st_00, w_bck_prev_st_01, w_bck_prev_st_10, w_bck_prev_st_11;
+    wire w_memory_done;
 
     // Khởi tạo và ghép nối các module con 
     // Module 1: extract_bit
