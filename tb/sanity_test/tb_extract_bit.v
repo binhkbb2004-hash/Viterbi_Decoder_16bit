@@ -1,42 +1,37 @@
 `timescale 1ns / 1ps
-
 module tb_extract_bit();
-
-    // Khai báo tín hiệu
-    reg         clk;
-    reg         rst_n;
-    reg         i_start;
-    reg  [15:0] i_data;
-    
+    reg clk;
+    reg rst_n;
+    reg i_start;
+    reg [15:0] i_data;
     wire [1:0]  o_rx;
-    wire        o_valid;
-    wire        o_sof;
+    wire o_valid;
+    wire o_sof;
 
-    // Khởi tạo module
+    // DUT
     extract_bit dut (
-        .clk(clk),
-        .rst_n(rst_n),
-        .i_start(i_start),
-        .i_data(i_data),
-        .o_rx(o_rx),
-        .o_valid(o_valid),
-        .o_sof(o_sof)
+        .clk (clk),
+        .rst_n (rst_n),
+        .i_start (i_start),
+        .i_data (i_data),
+        .o_rx (o_rx),
+        .o_valid (o_valid),
+        .o_sof (o_sof)
     );
 
-    // Tạo Clock
+    // Clock
     initial begin
         clk = 0;
         forever #10 clk = ~clk; 
     end
 
-    // Kịch bản Test
+    // Test
     initial begin
-        // Khởi tạo trạng thái ban đầu
         rst_n   = 0;
         i_start = 0;
         i_data  = 16'd0;
 
-        // Chờ 2.5 chu kỳ và nhả reset
+        // nhả reset
         #25;
         rst_n = 1;
 
@@ -59,7 +54,6 @@ module tb_extract_bit();
         i_start = 0;
         repeat (10) @(posedge clk);
 
-        // Kết thúc mô phỏng
         $stop;
     end
 endmodule

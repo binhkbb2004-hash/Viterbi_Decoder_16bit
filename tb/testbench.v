@@ -9,12 +9,12 @@ module testbench ();
 
     // DUT
     viterbi_top DUT (
-        .clk    (   clk     ),
-        .rst_n  (   rst_n   ),
-        .i_start(   i_start ),
-        .i_data (   i_data  ),
-        .o_data (   o_data  ),
-        .o_done (   o_done  )
+        .clk (clk),
+        .rst_n (rst_n),
+        .i_start (i_start),
+        .i_data (i_data),
+        .o_data (o_data),
+        .o_done (o_done)
     );
 
     // Clock
@@ -80,7 +80,7 @@ module testbench ();
                     $display("PASSED | Input: %b | Exp: %b | Act: %b", exp_in, exp_out, o_data);
                     pass_cnt = pass_cnt + 1;
                 end else begin
-                    $display("--> FAILED | Input: %b | Exp: %b | Act: %b", exp_in, exp_out, o_data);
+                    $display("--------> FAILED | Input: %b | Exp: %b | Act: %b", exp_in, exp_out, o_data);
                     fail_cnt = fail_cnt + 1;
                 end
             end else begin

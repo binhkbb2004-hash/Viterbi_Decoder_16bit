@@ -1,15 +1,13 @@
 `timescale 1ns/1ps
-
 module tb_viterbi_top();
-    reg         clk;
-    reg         rst_n;
-    reg         i_start; 
-    reg  [15:0] i_data;
-    
-    wire [7:0]  o_data;
-    wire        o_done;
+    reg clk;
+    reg rst_n;
+    reg i_start; 
+    reg [15:0] i_data;
+    wire [7:0] o_data;
+    wire o_done;
 
-    // Khởi tạo module top
+    // DUT
     viterbi_top uut_top (
         .clk(clk),
         .rst_n(rst_n),
@@ -19,24 +17,22 @@ module tb_viterbi_top();
         .o_done(o_done)
     );
 
-    // Tạo Clock
+    // Clock
     initial begin
         clk = 0;
         forever #5 clk = ~clk; 
     end
 
-    // Kịch bản test
+    // Test
     initial begin
-        // Khởi tạo trạng thái ban đầu
         rst_n   = 0; 
         i_start = 0; 
         i_data  = 16'd0;
 
-        // Đợi 2.5 chu kỳ rồi nhả reset
+        // nhả reset
         #25 rst_n = 1;
 
         @(negedge clk);
-        
         // Input 10-00-00-00-00-00-00-00
         i_data  = 16'b10_00_00_00_00_00_00_00; 
         i_start = 1;
@@ -46,8 +42,6 @@ module tb_viterbi_top();
 
         // Chờ cờ o_done lên 1 
         wait(o_done == 1'b1);
-
-        // Chờ thêm vài chu kì
         repeat (5) @(posedge clk);
 
         $stop;
